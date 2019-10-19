@@ -1,0 +1,77 @@
+body{
+  font-family: "Courier";
+}
+
+h1{
+  margin: 50px;
+  text-transform: uppercase;
+}
+
+.form{
+  width: 30vw;
+  height: 50vh;
+  padding: 10px 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid rgba(134,148,42,0.8);
+  border-radius: 5px;
+}
+
+.form-input{
+  width: 80%;
+  background-color: #F3F4EC;
+  height: 31px;
+  padding: 3px 7px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-family: "Courier";
+}
+
+.form-input:focus{
+  background-color: rgba(163,123,69,0.3);
+  border: 1px solid 	#507642;
+}
+
+.form-link{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-link a{
+  text-decoration: none;
+  color: #A37B45;
+  font-family: "Courier";
+}
+
+.form-link a:hover{
+  color: #CCCFBC;
+}
+
+.btn{
+  width: 200px;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #86942A;
+  color: #F3F4EC;
+  margin-top: 30px;
+ font-family: "Courier";
+}
+
+.btn:hover{
+  background-color: #507642;
+}
+
+.form-color{
+  color: #507642;
+}
+
+.form-icon{
+  margin-right: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
