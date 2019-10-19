@@ -8,7 +8,7 @@
                 <div class="atairu">
                     <h3>Sobre</h3>
                     <ul>
-                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="about.php">Quem somos</a></li>
                         <li><a href="contato.php">Contato</a></li>
                     </ul>
                 </div>
