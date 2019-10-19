@@ -2,16 +2,15 @@ body{
   font-family: "Courier";
 }
 
-h1{
-  margin: 50px;
-  text-transform: uppercase;
+#form-color-title{
+  font-size: 36px;
 }
 
-.form{
+.form-conta{
   width: 30vw;
   height: 50vh;
   padding: 10px 16px;
-  margin: 0 auto;
+  margin: 40px auto;
   box-sizing: border-box;
   border: 2px solid rgba(134,148,42,0.8);
   border-radius: 5px;
@@ -68,6 +67,9 @@ h1{
 
 .form-color{
   color: #507642;
+  margin: 40px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .form-icon{

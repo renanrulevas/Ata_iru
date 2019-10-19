@@ -2,9 +2,9 @@
 
     <main>
       <section>
-        <div class="form">
+        <div class="form-conta">
                 <form action="" method="POST" class="">
-                    <h1 class="form-color">Login</h1>
+                    <h1 class="form-color" id="form-color-title">Login</h1>
                     <div class="">
                         <div class="form-icon">
                             <span class="form-color" id=""><i class="fas fa-user"></i></span>
@@ -21,9 +21,9 @@
                       <a href="" class="">Esqueceu a Senha?</a>
                       <a href="" class="">Ainda não sou cadatrado</a>
                     </div>
-                    <button class="btn" type="submit">Cadastrar <i class="fas fa-arrow-alt-circle-right"></i></button>
+                    <button class="btn" type="submit">Enviar <i class="fas fa-arrow-alt-circle-right"></i></button>
                 </form>
         </div>
-      </section>  
+      </section>
     </main>
 <?php include_once("footer.php"); ?>
