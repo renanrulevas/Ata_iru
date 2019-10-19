@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/contato.css" type="text/css">
     <link rel="stylesheet" href="css/faq.css" type="text/css">
     <link rel="stylesheet" href="css/about.css" type="text/css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/vizprod.css">
     <title>Livraria Ataîru | Seu companheiro de viagem</title>
 </head>
 <body>

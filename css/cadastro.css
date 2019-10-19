@@ -1,0 +1,9 @@
+.forma{
+    width: 30vw;
+    height: 65vh;
+    padding: 10px 16px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    border: 2px solid rgba(134,148,42,0.8);
+    border-radius: 5px; 
+  }
