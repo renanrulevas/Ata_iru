@@ -4,7 +4,7 @@
     <section class="col-12 col-sm-6 col-md-5">
       <form id="form-container-login">
         <div class="form-group">
-          <div class="login-div-icones  text-left">
+          <div class="login-div-icones text-left">
             <label for="login-email">
                 <span><i class="fas fa-user"></i></span> E-mail ou usuário *
             </label>
