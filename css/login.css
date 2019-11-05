@@ -1,79 +1,57 @@
-body{
+#main-login{
   font-family: "Courier";
 }
 
-#form-color-title{
-  font-size: 36px;
+#main-login #form-container-login{
+  position: absolute;
+  top: 10vh;
+  background: #fff;
+  width: 90%;
+  padding: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(134,148,42,0.8);
 }
 
-.form-conta{
-  width: 30vw;
-  height: 50vh;
-  padding: 10px 16px;
-  margin: 40px auto;
-  box-sizing: border-box;
-  border: 2px solid rgba(134,148,42,0.8);
-  border-radius: 5px;
-}
-
-.form-input{
-  width: 80%;
+#main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+  width: 100%;
   background-color: #F3F4EC;
-  height: 31px;
-  padding: 3px 7px;
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-family: "Courier";
+  border: 1px solid #CCCFBC;
 }
 
-.form-input:focus{
+#main-login #form-container-login #login-email:focus, #main-login #form-container-login #login-senha:focus{
   background-color: rgba(163,123,69,0.3);
-  border: 1px solid 	#507642;
+  box-shadow: 0px 0px 5px 0px #A37B45;
 }
 
-.form-link{
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+#main-login #form-container-login .login-div-icones{
+  font-size: 20px;
+  color: #A37B45;
 }
 
-.form-link a{
+#main-login #form-container-login .login-div-icones i{
+  color: #507642;
+  margin-left: 15px;
+}
+
+#main-login #form-container-login #login-links a{
   text-decoration: none;
   color: #A37B45;
   font-family: "Courier";
+  font-size: 14px;
+  display: block;
 }
 
-.form-link a:hover{
+#main-login #form-container-login #login-links a:hover{
   color: #CCCFBC;
 }
 
-.btn{
-  width: 200px;
-  font-size: 20px;
-  padding: 20px;
-  border-radius: 10px;
+#main-login #form-container-login #botao-login{
   background-color: #86942A;
   color: #F3F4EC;
-  margin-top: 30px;
- font-family: "Courier";
+  font-family: "Courier";
+  border: 2px solid #507642;
 }
 
-.btn:hover{
+#main-login #form-container-login #botao-login:hover{
   background-color: #507642;
-}
-
-.form-color{
-  color: #507642;
-  margin: 40px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.form-icon{
-  margin-right: 10px;
-  font-size: 20px;
-  display: inline-block;
+  border: 2px solid rgba(134,148,42,0.8);
 }
