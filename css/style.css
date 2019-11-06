@@ -86,82 +86,31 @@ body{
     justify-content: center;
 }
 
-
-header nav {
-    display: flex;
+.navbar,
+.navbar .dropdown-menu {
     background-color: #86942A;
-    margin: 0;
-    padding: 0;
+    color: #fff;
 }
 
-header nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.navbar-nav  {
+    flex: 1;
+    margin: auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
-header nav ul a {
-    text-decoration: none;
-    color: #F3F4EC;
-    text-transform: uppercase;
-    font-family: "Courier";
-    font-weight: bold;
-    font-size: 14px;
-}
-
-/* Dropdown */
-header nav ul li {
-    display: block;
-    transition-duration: 0.5s;
-    position: relative;
-    padding: 0.7rem;
-}
-
-header nav li:hover {
+.navbar ul li:hover,
+.navbar .dropdown-menu a:hover {
     background-color: #507642;
-    cursor: pointer;
 }
 
-header nav ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 0.7rem;
-    left: 0;
-    display: none;
-    background-color: #86942A;
-}
-
-header nav ul li:hover > ul,
-header nav ul li:focus-within > ul,
-header nav ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    z-index: 1;
-}
-
-header nav li:focus-within a {
-  outline: none;
-}
-
-header nav ul li ul li {
-    clear: both;
-    z-index: 1;
-}
-
-.page-container {
-    position: relative;
-    min-height: 100vh;
+.navbar a{
+    color: #fff;
 }
 
 footer {
     font-family: "Courier";
+    text-align: left;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -176,7 +125,7 @@ footer .seta a {
     transition: 1s;
 }
 
-footer .container {
+footer .container-footer {
     padding-top: 20px;
     padding-bottom: 60px;
     background-color: #507642;
@@ -184,35 +133,35 @@ footer .container {
     justify-content: space-evenly;
 }
 
-footer .container h3 {
+footer .container-footer h3 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
 }
 
-footer .container ul {
+footer .container-footer ul {
     padding: 0;
 }
 
-footer .container ul li {
+footer .container-footer ul li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-footer .container ul li a{
+footer .container-footer ul li a{
     text-decoration: none;
     color: #fff;
 }
 
-footer .container ul li a:hover{
+footer .container-footer ul li a:hover{
     border-bottom: 1.5px solid #fff;
 }
 
-footer .container .pagamento ul {
+footer .container-footer .pagamento ul {
     display: flex;
 }
 
-footer .container .pagamento img {
+footer .container-footer .pagamento img {
     max-width: 50px;
     border-radius: 6px;
     padding: 0 5px;
@@ -228,11 +177,14 @@ footer .msg {
 
 /* FINAL DO MENU + FOOTER*/
 
-
-
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
 
 main {
-    margin: 50px auto 0;
+    margin: 50px auto 70px;
     text-align: center;
     padding-bottom: 7rem;
+    overflow: hidden;
 }

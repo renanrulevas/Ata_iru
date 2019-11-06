@@ -84,7 +84,7 @@ function listarLivrosDestaques() {
                 <h3>$livro[titulo]</h3>
                 <small>$livro[sobrenome], $livro[nome]</small>
                 <h4>$livro[preco]</h4>
-                <button class='add_carrinho'>Ver mais</button>
+                <a href='vizprod.php'><button class='add_carrinho'>Ver mais</button></a>
             </li>";
     }
 }
@@ -99,9 +99,9 @@ function listarLivrosOfertas() {
                 <img src='$livro[imagem]' alt='' />
                 <h3>$livro[titulo]</h3>
                 <small>$livro[sobrenome], $livro[nome]</small>
-                <h4 class='desconto'>$livro[desconto]</h4>
-                <h4>$livro[preco]</h4>
-                <button class='add_carrinho'>Ver mais</button>
+                <h4 class='desconto'>$livro[preco]</h4>
+                <h4>$livro[desconto]</h4>
+                <a href='vizprod.php'><button class='add_carrinho'>Ver mais</button></a>
             </li>";
     }
 }
@@ -117,7 +117,7 @@ function listarLivrosProdutos() {
                 <h3>$livro[titulo]</h3>
                 <small>$livro[sobrenome], $livro[nome]</small>
                 <h4>$livro[preco]</h4>
-                <button class='add_carrinho'>Ver mais</button>
+                <a href='vizprod.php'><button class='add_carrinho'>Ver mais</button></a>
             </li>";
     }
 }

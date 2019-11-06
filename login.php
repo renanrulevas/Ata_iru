@@ -19,7 +19,7 @@
         </div>
         <div class="form-group" id="login-links">
          <a href="" class="">Esqueceu a Senha?</a>
-         <a href="" class="">Ainda não sou cadatrado</a>
+         <a href="cadastro.php" class="">Ainda não sou cadatrado</a>
        </div>
        <button type="submit" class="btn btn-primary btn-block" id="botao-login">Enviar</button>
      </form>
