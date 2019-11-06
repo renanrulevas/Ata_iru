@@ -1,31 +1,29 @@
 <?php include_once("header.php"); ?>
 <main class="container-fluid" id="main-login">
   <section class="row justify-content-center">
-    <section class="col-12 col-sm-6 col-md-5">
-      <form id="form-container-login">
-        <div class="form-group">
-          <div class="login-div-icones text-left">
-            <label for="login-email">
-                <span><i class="fas fa-user"></i></span> E-mail ou usuário *
-            </label>
-         </div>
-         <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Digite seu usuário ou e-mail" name="login-email">
+    <section class="col-12 col-sm-6 col-lg-3">
+      <form id="form-container-login" class="justify-content-center">
+        <h1 class="text-center mt-2" id="login-titulo">Login</h1>
+        <div class="input-group mb-4">
+          <div class="input-group-prepend login-div-icones">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+          </div>
+          <input class="form-control" type="email" name="login-email" id="login-email" placeholder="Digite seu E-mail"
+          aria-describedby="login-email" required autofocus>*
+        </div>
+        <div class="input-group mb-4">
+          <div class="input-group-prepend login-div-icones">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+          </div>
+          <input class="form-control" type="password" name="login-senha" id="login-senha" placeholder="Digite sua Senha" aria-describedby="login-senha" required>*
+        </div>
+        <div class="form-group" id="login-links">
+         <a href="" class="">Esqueceu a Senha?</a>
+         <a href="" class="">Ainda não sou cadatrado</a>
        </div>
-       <div class="form-group">
-        <div class="login-div-icones text-left">
-          <label for="login-senha">
-              <span><i class="fas fa-lock"></i></span> Senha *
-         </label>
-       </div>
-       <input type="password" class="form-control" id="login-senha" placeholder="Digite sua senha" name="login-senha">
-     </div>
-     <div class="form-group" id="login-links">
-       <a href="" class="">Esqueceu a Senha?</a>
-       <a href="" class="">Ainda não sou cadatrado</a>
-     </div>
-     <button type="submit" class="btn btn-primary btn-block" id="botao-login">Enviar</button>
-   </form>
+       <button type="submit" class="btn btn-primary btn-block" id="botao-login">Enviar</button>
+     </form>
+   </section>
  </section>
-</section>
 </main>
 <?php include_once("footer.php"); ?>

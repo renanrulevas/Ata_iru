@@ -3,16 +3,19 @@
 }
 
 #main-login #form-container-login{
-  position: absolute;
-  top: 10vh;
   background: #fff;
   width: 90%;
-  padding: 40px;
+  padding: 60px;
   box-shadow: 0px 0px 10px 0px rgba(134,148,42,0.8);
 }
 
+#main-login #form-container-login #login-titulo{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #86942A;
+}
+
 #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
-  width: 100%;
   background-color: #F3F4EC;
   border: 1px solid #CCCFBC;
 }
@@ -36,7 +39,7 @@
   text-decoration: none;
   color: #A37B45;
   font-family: "Courier";
-  font-size: 14px;
+  font-size: 16px;
   display: block;
 }
 
