@@ -42,7 +42,7 @@
 			<div class="login">
 				<a href="login.php">
 					<i class="fas fa-user icon"></i>
-					<p>
+					<p id="texto_cadastro">
 						Entre ou <br>
 						cadastre-se
 					</p>
@@ -54,8 +54,8 @@
 				</a>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg p-0">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdownMenuLink" aria-controls="navbarDropdownMenuLink" aria-expanded="false" aria-label="Alterna navegação">
+		<nav class="navbar navbar-expand-lg navbar-dark p-0">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarDropdownMenuLink" aria-expanded="false" aria-label="Alterna navegação">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -84,21 +84,5 @@
 			</div>
 		</nav>
 
-			<!-- <nav>
-				<ul>
-					<li>
-						<a href="#"><i class="fas fa-bars"></i> Categorias <i class="fas fa-chevron-down"></i></a>
-						<ul class="dropdown">
-							<li><a href="produtos.php">Autoajuda</a></li>
-							<li><a href="produtos.php">Biografia</a></li>
-							<li><a href="produtos.php">Filosofia</a></li>
-							<li><a href="produtos.php">Romance</a></li>
-						</ul>
-					</li>
-					<li><a href="produtos.php">Mais vendidos</a></li>
-					<li><a href="produtos.php">Lançamentos</a></li>
-					<li><a href="produtos.php">Ofertas do dia</a></li>
-				</ul>
-			</nav> -->
 	</header>
 	<div class="page-container">

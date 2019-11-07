@@ -22,7 +22,7 @@ body{
 }
 
 #menu .logo {
-    width: 15%;
+    width: 200px;
     margin: 0 auto;
 }
 
@@ -187,4 +187,29 @@ main {
     text-align: center;
     padding-bottom: 7rem;
     overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    #texto_cadastro {
+        display: none;
+    }
+
+    #menu .logo {
+        width: 100px;
+    }
+
+    footer .container-footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer .container-footer ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu .login p {
+        font-size: 10px;
+    }
 }
