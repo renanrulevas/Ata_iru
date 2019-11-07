@@ -35,3 +35,106 @@
 #conta-principal .conta-div-principal .paraf-conta:hover{
   color: #CCCFBC;
 }
+
+/*Media-queries*/
+
+@media (max-width: 576px) {
+  #conta-principal #titulo-conta{
+    text-align: center;
+  }
+
+  #conta-principal .conta-div-principal .titulo-conta-2{
+    font-size: 26px;
+  }
+
+  #conta-principal .conta-div-principal .paraf-conta{
+    font-size: 22px;
+  }
+  #conta-principal .conta-div-principal img{
+    width: 35%;
+  }
+}
+
+@media (min-width: 576px) {
+  #conta-principal #titulo-conta{
+    text-align: center;
+  }
+
+  #conta-principal .conta-div-principal .titulo-conta-2{
+    font-size: 26px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  #conta-principal .conta-div-principal .paraf-conta{
+    font-size: 22px;
+    text-align: left;
+  }
+  #conta-principal .conta-div-principal img{
+    margin-top: 20px;
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) {
+ #conta-principal #titulo-conta{
+  text-align: left;
+}
+
+#conta-principal .conta-div-principal .titulo-conta-2{
+  font-size: 28px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#conta-principal .conta-div-principal .paraf-conta{
+  font-size: 24px;
+  text-align: left;
+}
+#conta-principal .conta-div-principal img{
+  margin-top: 30px;
+  width: 65%;
+}
+}
+
+@media (min-width: 992px) {
+ #conta-principal #titulo-conta{
+  text-align: left;
+}
+
+#conta-principal .conta-div-principal .titulo-conta-2{
+  font-size: 34px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#conta-principal .conta-div-principal .paraf-conta{
+  font-size: 26px;
+  text-align: left;
+}
+#conta-principal .conta-div-principal img{
+  margin-top: 20px;
+  width: 60%;
+}
+}
+
+@media (min-width: 1200px) {
+ #conta-principal #titulo-conta{
+  text-align: left;
+}
+
+#conta-principal .conta-div-principal .titulo-conta-2{
+  font-size: 36px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#conta-principal .conta-div-principal .paraf-conta{
+  font-size: 26px;
+  text-align: left;
+}
+#conta-principal .conta-div-principal img{
+  margin-top: 20px;
+  width: 55%;
+}
+}
