@@ -1,7 +1,7 @@
 <?php include_once("header.php"); ?>
 <main class="container-fluid" id="main-login">
   <section class="row justify-content-center">
-    <section class="col-12 col-sm-6 col-lg-3">
+    <section class="col-12 col-sm-6 col-lg-6">
       <form id="form-container-login" class="justify-content-center">
         <h1 class="text-center mt-2" id="login-titulo">Login</h1>
         <div class="input-group mb-4">
