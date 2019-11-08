@@ -1,9 +1,22 @@
+/* @media (max-width: 576px) {
 
-p{
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-/* img{
-    width: 100px;
+    }
+
+main {
+        width: 50em;
+        text-align: justify;
+        margin-left: 35px;
+        margin-right: 100px;
+    }
+  }
+  */
+
+
+/* 
+main {
+    width: 50em;
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 100px;
 } */
+
