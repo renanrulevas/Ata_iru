@@ -1,7 +1,6 @@
 <?php include_once("header.php"); ?>
         
     <main>
-       
         <!-- Primeiro carousel -->
         <section class="glide glide_main">
             <div class="glide__track glide__track__main" data-glide-el="track">
@@ -32,7 +31,7 @@
         <!-- Seção de destaques -->
         <section id="destaques">
             <h2>Destaques</h2>
-            <div class="glide glideMultiplos glide_destaques">
+            <div class="glide glide__track glideMultiplos glide_destaques">
                 <div class="glide__track glide__track__multiplo" data-glide-el="track">
                     <ul class="glide__slides">
                         <?php listarLivrosDestaques(); ?>
