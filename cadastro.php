@@ -1,8 +1,9 @@
 <?php include_once("header.php"); ?>    
-    <main>
+<div class="container">    
+<main>
 <section>
 <div class="forma">
-<h1>Cadastro de Cliente</h1>
+<h1 id="main-cadastro">Cadastro de Cliente</h1>
 <form method="POST" action="cadastro.php">
     <p> <label>Nome:</label> </p>
         <input type="text" name="nome" id="nome"><br> 
@@ -18,6 +19,8 @@
 </form>
 </div>
 <section>
-    </main>        
+    </main>
+    
+</div>
         
 <?php include_once("footer.php"); ?>    
