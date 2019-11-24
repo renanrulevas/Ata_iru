@@ -3,7 +3,7 @@
     <main>
         
         <div class="produtos_container">
-            <div class="card">
+            <div class="card_produtos">
                 <ul>
                     <?php listarLivrosProdutos(); ?>
                 </ul>

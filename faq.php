@@ -3,7 +3,7 @@
     <main>
        
         <div class="container-faq">
-            <h2>FAQ</h2>
+            <h1>FAQ</h1>
             <div class="accordion">
                 <div class="accordion-item">
                     <a>O que é Ataîru?</a>

@@ -17,7 +17,7 @@
                     </label>
                 </div>
                 <div class="contato-botao">
-                    <input type="submit" name="enviar" />
+                    <input type="submit" name="enviar" value="Enviar" />
                 </div>
             </form>
         </section>

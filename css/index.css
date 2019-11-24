@@ -20,9 +20,11 @@
     background-color: #507642;
     border: none;
     color: #fff; 
-    font-weight: bold;
-    font-size: 24px;  
+    font-size: 20px;  
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 }
 
 .glide__arrow:hover {
@@ -104,7 +106,7 @@ section h2 {
 
 .newsletter input {
     width: 80%;
-    height: 30px;
+    height: 35px;
     padding-left: 10px;
     border: 1px solid #000;
     font-size: 16px;
@@ -118,12 +120,11 @@ section h2 {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 0 rgba(0.1, 0.1, 0.1, 0.4);
 }
 
 .newsletter button:hover {
     background-color: #86942A;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 576px) {

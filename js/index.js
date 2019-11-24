@@ -23,9 +23,9 @@ var ofertasGlide = new Glide('.glide_ofertas', {
 });
 
 // Carousel Responsivo
-const perView4 = { perView: 4 };
-const perView2 = { perView: 2 };
-const perView1 = { perView: 1 };
+const perView4 = { perView: 4, };
+const perView2 = { perView: 2, };
+const perView1 = { perView: 1, };
 
 
 // if (matchMedia('screen and (min-width: 992px)').matches) {

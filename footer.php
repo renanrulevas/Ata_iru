@@ -13,7 +13,7 @@
                     </ul>
                 </div>
                 <div class="atendimento">
-                    <h3>Atendimento ao cliente</h3>
+                    <h3>Atendimento</h3>
                     <ul>
                         <li><a href="faq.php">FAQ</a></li>
                     </ul>
@@ -27,7 +27,16 @@
                         <li><img src="img/4.png" alt=""></li>
                         <li><img src="img/5.png" alt=""></li>
                     </ul>
+                    <div class="social_midia">
+                    <h3>Mídias Sociais</h3>
+                    <ul class="social-media">
+                        <li><a href="#" class="footer_fb"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#" class="footer_twitter"><i class="fab fa-twitter-square"></i></a></li>
+
+                    </ul>
                 </div>
+                </div>
+                
             </div>
             <div class="msg">2019 | Livraria Ataîru | Projeto Integrador - Grupo 4 | Digital House </div>
         </footer>

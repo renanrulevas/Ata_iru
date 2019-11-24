@@ -42,9 +42,9 @@
 			<div class="login">
 				<a href="login.php">
 					<i class="fas fa-user icon"></i>
-					<p id="texto_cadastro">
-						Entre ou <br>
-						cadastre-se
+					<p class="p-0 m-0 pl-2" id="texto_cadastro">
+						Entrar ou <br>
+						cadastrar
 					</p>
 				</a>
 			</div>
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark p-0">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarDropdownMenuLink" aria-expanded="false" aria-label="Alterna navegação">
+			<button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarDropdownMenuLink" aria-expanded="false" aria-label="Alterna navegação">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
