@@ -11,5 +11,6 @@
 * Regiane Machado
 * Renan Martins
 * Valter Rodriguez
+* Irailda Fernandes
 
 ---
