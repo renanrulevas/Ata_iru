@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/produtos.css" type="text/css">
 	<link rel="stylesheet" href="css/login.css" type="text/css">
 	<link rel="stylesheet" href="css/conta.css" type="text/css">
+	<link rel="stylesheet" href="css/alterarConta.css" type="text/css">
 	<link rel="stylesheet" href="css/carrinho.css" type="text/css">
 	<link rel="stylesheet" href="css/contato.css" type="text/css">
 	<link rel="stylesheet" href="css/faq.css" type="text/css">
@@ -27,7 +28,7 @@
 	<title>Livraria Ataîru | Seu companheiro de viagem</title>
 </head>
 <body>
-	
+
 	<header>
 		<div id="menu">
 			<div class="logo">

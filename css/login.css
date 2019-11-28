@@ -7,12 +7,6 @@
   box-shadow: 0px 0px 10px 0px rgba(134,148,42,0.8);
 }
 
-#main-login #form-container-login #login-titulo{
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #86942A;
-}
-
 #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
   background-color: #F3F4EC;
   border: 1px solid #CCCFBC;

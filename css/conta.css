@@ -2,21 +2,15 @@
   font-family: "Courier";
 }
 
-#conta-principal #titulo-conta{
-  font-size: 36px;
-  text-align: left;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 #conta-principal .conta-div-principal{
   margin-top: 10px;
   box-shadow: 0px 0px 10px 0px rgba(134,148,42,0.8);
   padding: 20px;
+  max-width: 940px;
 }
 
 #conta-principal .conta-div-principal img{
-  width: 45%;
+  width: 25%;
 }
 
 #conta-principal .conta-div-principal .titulo-conta-2{
@@ -26,23 +20,20 @@
   font-weight: bold;
 }
 
-#conta-principal .conta-div-principal .paraf-conta{
+#conta-principal .conta-div-principal .paraf-conta a{
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
+  color: black;
 }
 
-#conta-principal .conta-div-principal .paraf-conta:hover{
+#conta-principal .conta-div-principal .paraf-conta a:hover{
   color: #CCCFBC;
 }
 
 /*Media-queries*/
 
 @media (max-width: 576px) {
-  #conta-principal #titulo-conta{
-    text-align: center;
-  }
-
   #conta-principal .conta-div-principal .titulo-conta-2{
     font-size: 26px;
   }
@@ -56,10 +47,6 @@
 }
 
 @media (min-width: 576px) {
-  #conta-principal #titulo-conta{
-    text-align: center;
-  }
-
   #conta-principal .conta-div-principal .titulo-conta-2{
     font-size: 26px;
     margin-top: 10px;
@@ -77,10 +64,6 @@
 }
 
 @media (min-width: 768px) {
- #conta-principal #titulo-conta{
-  text-align: left;
-}
-
 #conta-principal .conta-div-principal .titulo-conta-2{
   font-size: 28px;
   margin-top: 10px;
@@ -93,15 +76,11 @@
 }
 #conta-principal .conta-div-principal img{
   margin-top: 30px;
-  width: 65%;
+  width: 45%;
 }
 }
 
 @media (min-width: 992px) {
- #conta-principal #titulo-conta{
-  text-align: left;
-}
-
 #conta-principal .conta-div-principal .titulo-conta-2{
   font-size: 34px;
   margin-top: 20px;
@@ -114,14 +93,11 @@
 }
 #conta-principal .conta-div-principal img{
   margin-top: 20px;
-  width: 60%;
+  width: 40%;
 }
 }
 
 @media (min-width: 1200px) {
- #conta-principal #titulo-conta{
-  text-align: left;
-}
 
 #conta-principal .conta-div-principal .titulo-conta-2{
   font-size: 36px;
@@ -135,6 +111,6 @@
 }
 #conta-principal .conta-div-principal img{
   margin-top: 20px;
-  width: 55%;
+  width: 35%;
 }
 }

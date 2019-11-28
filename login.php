@@ -3,7 +3,7 @@
   <section class="row justify-content-center">
     <section class="col-12 col-sm-6 col-lg-6">
       <form id="form-container-login" class="justify-content-center">
-        <h1 class="text-center mt-2" id="login-titulo">Login</h1>
+        <h1 class="text-center mt-2">Login</h1>
         <div class="input-group mb-4">
           <div class="input-group-prepend login-div-icones">
             <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -19,7 +19,7 @@
         </div>
         <div class="form-group" id="login-links">
          <a href="" class="">Esqueceu a Senha?</a>
-         <a href="cadastro.php" class="">Ainda não sou cadatrado</a>
+         <a href="cadastro.php" class="">Ainda não sou cadastrado</a>
        </div>
        <button type="submit" class="btn btn-primary btn-block" id="botao-login">Enviar</button>
      </form>
