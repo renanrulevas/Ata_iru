@@ -1,9 +1,9 @@
 <?php include_once("header.php"); ?>
         
     <main>
+        <h1 class="text-center">FAQ</h1>
        
         <div class="container-faq">
-            <h1>FAQ</h1>
             <div class="accordion">
                 <div class="accordion-item">
                     <a>O que é Ataîru?</a>
@@ -55,7 +55,6 @@
                 </div>
             </div>
         </div>
-        
     </main>        
        
     <script>

@@ -1,14 +1,7 @@
 .container-faq {
   margin: 0 auto;
   padding: 4rem;
-  width: 48rem;
-}
-
-.container-faq h2 {
-  font-size: 1.75rem;
-  color: #373d51;
-  padding: 1.3rem;
-  margin: 0;
+  width: 40rem;
 }
 
 .accordion a {
@@ -27,7 +20,8 @@
   color: #7288a2;
   font-size: 1.15rem;
   font-weight: 700;
-  border-bottom: 1px solid #e5e5e5;
+  font-family: "Courier";
+  /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .accordion a:hover,
@@ -73,6 +67,7 @@
 }
 
 .accordion .content-faq p {
+  font-family: "Courier";
   font-size: 1rem;
   font-weight: 300;
 }
@@ -85,3 +80,12 @@
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
 }
+
+/*Responsividade*/
+
+ @media (max-width: 576px){
+  .container-faq {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 25rem;
+  }
