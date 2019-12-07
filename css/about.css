@@ -1,22 +1,7 @@
-/* @media (max-width: 576px) {
+h1 {
+    text-align: center;
+}
 
-    }
-
-main {
-        width: 50em;
-        text-align: justify;
-        margin-left: 35px;
-        margin-right: 100px;
-    }
-  }
-  */
-
-
-/* 
-main {
-    width: 50em;
-    text-align: justify;
-    margin-left: 35px;
-    margin-right: 100px;
-} */
-
+p {
+    text-align: center;
+}
