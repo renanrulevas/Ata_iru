@@ -1,9 +1,11 @@
 <?php include_once("header.php"); ?>
 
 <div class="container">
-    <main>
+    <!-- <main> -->
         <div class="row">
             <div class="col">
+            <br>
+            <br>
                 <h1>Quem somos</h1>
             </div>
             <div class="row">
@@ -40,7 +42,7 @@
             </div>
         </div>
 
-    </main>
+    <!-- </main> -->
 </div>
 
 <?php include_once("footer.php"); ?>
