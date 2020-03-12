@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
 }
@@ -35,7 +35,7 @@ h1 {
     margin: 0 auto;
 }
 
-#menu .logo img{
+#menu .logo img {
     width: 100%;
 }
 
@@ -49,20 +49,20 @@ h1 {
 }
 
 #menu .busca form .search {
-	padding: 0 30px;
-	width: 70%;
-	font-size: 18px;
+    padding: 0 30px;
+    width: 70%;
+    font-size: 18px;
     border-radius: 20px 0 0 20px;
     height: 35px;
 }
 
 #menu .busca form .submit {
-	cursor: pointer;
-	border: none;
-	background-size: 35px 35px;
-	border-radius: 0 20px 20px 0;
-	display: inline-block;
-	width: 40px;
+    cursor: pointer;
+    border: none;
+    background-size: 35px 35px;
+    border-radius: 0 20px 20px 0;
+    display: inline-block;
+    width: 40px;
 }
 
 #menu .login {
@@ -98,7 +98,7 @@ h1 {
 .navbar,
 .navbar .dropdown-menu,
 .navbar-dark .navbar-nav .nav-link {
-    background-color: #86942A;
+    background-color: #86942a;
     color: #fff;
 }
 
@@ -106,7 +106,7 @@ h1 {
     margin-bottom: 1.2px;
 }
 
-.navbar-nav  {
+.navbar-nav {
     flex: 1;
     margin: auto;
     display: flex;
@@ -119,7 +119,7 @@ h1 {
     background-color: #507642;
 }
 
-.navbar a{
+.navbar a {
     color: #fff;
 }
 
@@ -127,19 +127,27 @@ h1 {
 .navbar-toggler-icon {
     border-color: #fff;
     color: #fff;
-} 
+}
 
 .navbar-dark #navbarNavDropdown {
     padding-left: 10px;
-} 
+}
 
 .navbar-dark .navbarNavDropdown .navbar-nav .show .dropdown-item,
-.navbar-dark .navbarNavDropdown .navbar-nav .show .dropdown-menu
-.navbar-dark .navbarNavDropdown .navbar-nav .show .dropdown-item:hover {
+.navbar-dark
+    .navbarNavDropdown
+    .navbar-nav
+    .show
+    .dropdown-menu
+    .navbar-dark
+    .navbarNavDropdown
+    .navbar-nav
+    .show
+    .dropdown-item:hover {
     border: none;
     padding: 0;
     margin: 0;
-} 
+}
 
 footer {
     font-family: "Courier";
@@ -180,12 +188,12 @@ footer .container-footer ul li {
     margin-bottom: 10px;
 }
 
-footer .container-footer ul li a{
+footer .container-footer ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-footer .container-footer ul li a:hover{
+footer .container-footer ul li a:hover {
     border-bottom: 1.5px solid #fff;
 }
 
@@ -221,12 +229,12 @@ footer .container-footer .footer_twitter {
 }
 
 footer .container-footer .footer_twitter:hover {
-    color: #38A1F3;
+    color: #38a1f3;
     border: none;
 }
 
 footer .msg {
-    background-color: #86942A;
+    background-color: #86942a;
     padding: 10px 0;
     text-align: center;
     font-size: 10px;
@@ -257,7 +265,7 @@ main {
     }
 
     footer .container-footer {
-        display: block;
+        display: grid;
         text-align: center;
     }
 
