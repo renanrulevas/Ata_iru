@@ -7,12 +7,12 @@
   box-shadow: 0px 0px 10px 0px rgba(134,148,42,0.8);
 }
 
-#main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+#main-login #form-container-login #login-email, #main-login #form-container-login .login-senha {
   background-color: #F3F4EC;
   border: 1px solid #CCCFBC;
 }
 
-#main-login #form-container-login #login-email:focus, #main-login #form-container-login #login-senha:focus{
+#main-login #form-container-login #login-email:focus, #main-login #form-container-login .login-senha:focus{
   background-color: rgba(163,123,69,0.3);
   box-shadow: 0px 0px 5px 0px #A37B45;
 }
@@ -53,7 +53,7 @@
 /*Medias-queries*/
 
 @media (max-width: 576px) {
-  #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+  #main-login #form-container-login #login-email, #main-login #form-container-login .login-senha {
     font-size: 12px;
   }
 
@@ -71,7 +71,7 @@
     margin: 0 auto;
   }
 
-  #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+  #main-login #form-container-login #login-email, #main-login #form-container-login .login-senha {
     font-size: 16px;
   }
 }
@@ -82,7 +82,7 @@
     padding: 30px;
   }
 
-  #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+  #main-login #form-container-login #login-email, #main-login #form-container-login .login-senha {
     font-size: 18px;
   }
 
@@ -95,7 +95,7 @@
     margin: 0 auto;
   }
 
-  #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+  #main-login #form-container-login #login-email, #main-login #form-container-login .login-senha {
     font-size: 20px;
   }
 }
@@ -106,7 +106,7 @@
     padding: 60px;
   }
 
-  #main-login #form-container-login #login-email, #main-login #form-container-login #login-senha {
+  #main-login #form-container-login #login-email, #main-login #form-container-login .login-senha {
     font-size: 22px;
   }
 }

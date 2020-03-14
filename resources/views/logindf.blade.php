@@ -13,6 +13,7 @@
           </div>
           <input class="form-control" type="email" name="login-email" id="login-email" placeholder="Digite seu E-mail" aria-describedby="login-email" required autofocus>*
         </div>
+        
         <div class="input-group mb-4">
           <div class="input-group-prepend login-div-icones">
             <span class="input-group-text"><i class="fas fa-lock"></i></span>

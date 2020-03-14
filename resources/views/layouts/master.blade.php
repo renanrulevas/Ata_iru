@@ -41,13 +41,33 @@
         </form>
       </div>
       <div class="login">
-        <a href="/login">
           <i class="fas fa-user icon"></i>
-          <p class="p-0 m-0 pl-2" id="texto_cadastro">
-            Entrar ou <br>
-            cadastrar
-          </p>
-        </a>
+                        <!-- Authentication Links -->
+                        @guest
+                        <div>
+                             <div class="p-0 m-0 pl-2" id="texto_cadastro">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            @if (Route::has('register'))
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a>
+                             </div>
+                        </div>
+                            @endif
+                        @else
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Sair') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                        @endguest
       </div>
       <div class="carrinho">
         <a href="/carrinho">

@@ -24,3 +24,15 @@ Route::get('/sobre', 'HomeController@sobre');
 
 Route::get('/produtos', 'ProdutoController@index');
 Route::get('/produto/{id}', 'ProdutoController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
