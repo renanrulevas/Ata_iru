@@ -4,7 +4,7 @@
 <main class="container-fluid" id="main-login">
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-lg-6">
-            <form id="form-container-login" class="justify-content-center" method="POST" action="{{ route('login') }}">
+            <form class="form-container-login justify-content-center mt-5" method="POST" action="{{ route('login') }}">
                  @csrf
                 <h1 class="text-center mt-2">Login</h1>
                 <div class="input-group mb-4">
@@ -30,7 +30,7 @@
                     </span>
                     @enderror
                 </div>
-                <div class="form-group row">
+                <div class="form-group row text-left">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>

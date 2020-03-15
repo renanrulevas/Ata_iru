@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 Route::get('/alterarconta', 'HomeController@alterarConta');
 Route::get('/cadastro', 'HomeController@cadastro');
 Route::get('/carrinho', 'HomeController@carrinho');
@@ -24,6 +25,7 @@ Route::get('/sobre', 'HomeController@sobre');
 
 Route::get('/produtos', 'ProdutoController@index');
 Route::get('/produto/{id}', 'ProdutoController@show');
+Route::any('/auth/register','HomeController@index');
 
 Auth::routes();
 
@@ -36,3 +38,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

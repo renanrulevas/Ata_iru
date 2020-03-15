@@ -14,8 +14,8 @@
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>
-                    @endif
-
+                    @endif;
+                   </div>
                     <main>
                         <!-- Primeiro carousel -->
                         <section class="glide glide_main">
