@@ -14,10 +14,11 @@ class EnderecoCliente extends Migration
 	public function up()
 	{
 		Schema::create('endereco_cliente', function (Blueprint $table) {
+			$table->increments('id');
 			$table->integer('endereco_id_endereco')->unsigned();
 			$table->foreign('endereco_id_endereco')->references('id_endereco')->on('endereco');
-			$table->integer('cliente_id_cliente')->unsigned();
-			$table->foreign('cliente_id_cliente')->references('id_cliente')->on('cliente');
+			$table->integer('endereco_id_cliente')->unsigned();
+			$table->foreign('endereco_id_cliente')->references('id_cliente')->on('cliente');
 			$table->timestamps();
 		});
 	}

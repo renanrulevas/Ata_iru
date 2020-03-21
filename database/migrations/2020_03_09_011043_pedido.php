@@ -15,7 +15,7 @@ class Pedido extends Migration
 	{
 		Schema::create('pedido', function (Blueprint $table) {
 			$table->increments('id_pedido');
-			$table->string('status', 45);
+			$table->string('status');
 			$table->timestamps();
 		});
 	}

@@ -15,14 +15,12 @@ class Endereco extends Migration
 	{
 		Schema::create('endereco', function (Blueprint $table) {
 			$table->increments('id_endereco');
-			$table->string('logradouro', 200);
-			$table->string('numero', 45);
-			$table->string('complemento', 45)->nullable();
-			$table->string('cidade', 45);
+			$table->string('logradouro');
+			$table->string('numero');
+			$table->string('complemento')->nullable();
+			$table->string('cidade');
 			$table->string('uf', 2);
 			$table->integer('cep');
-			$table->integer('editora_id_editora')->unsigned();
-			$table->foreign('editora_id_editora')->references('id_editora')->on('editora');
 			$table->timestamps();
 		});
 	}

@@ -18,6 +18,7 @@ class ProdutoPedido extends Migration
 			$table->foreign('produto_id_produto')->references('id_produto')->on('produto');
 			$table->integer('pedido_id_pedido')->unsigned();
 			$table->foreign('pedido_id_pedido')->references('id_pedido')->on('pedido');
+			$table->integer('quantidade');
 			$table->timestamps();
 		});
 	}
