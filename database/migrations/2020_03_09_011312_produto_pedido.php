@@ -14,10 +14,10 @@ class ProdutoPedido extends Migration
 	public function up()
 	{
 		Schema::create('produto_pedido', function (Blueprint $table) {
-			$table->integer('produto_id_produto')->unsigned();
-			$table->foreign('produto_id_produto')->references('id_produto')->on('produto');
-			$table->integer('pedido_id_pedido')->unsigned();
-			$table->foreign('pedido_id_pedido')->references('id_pedido')->on('pedido');
+			$table->increments('id_produto');
+			$table->foreign('id_produto')->references('id_produto')->on('produto');
+			$table->unsignedInteger('id_pedido');
+			$table->foreign('id_pedido')->references('id_pedido')->on('pedido');
 			$table->integer('quantidade');
 			$table->timestamps();
 		});

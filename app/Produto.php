@@ -17,7 +17,7 @@ class Produto extends Model
 		'nome',
 		'autor',
 		'sinopse',
-		'produto_id_categoria',
+		'id_categoria',
 		'numero_paginas',
 		'ano_publicacao',
 		'edicao',

@@ -14,10 +14,10 @@ class CarrinhoProduto extends Migration
 	public function up()
 	{
 		Schema::create('carrinho_produto', function (Blueprint $table) {
-			$table->integer('carrinho_id_cliente')->unsigned();
-			$table->foreign('carrinho_id_cliente')->references('carrinho_id_cliente')->on('carrinho');
-			$table->integer('produto_id_produto')->unsigned();
-			$table->foreign('produto_id_produto')->references('id_produto')->on('produto');
+			$table->unsignedInteger('id_cliente');
+			$table->foreign('id_cliente')->references('id_cliente')->on('carrinho');
+			$table->unsignedInteger('id_produto');
+			$table->foreign('id_produto')->references('id_produto')->on('produto');
 			$table->timestamps();
 		});
 	}

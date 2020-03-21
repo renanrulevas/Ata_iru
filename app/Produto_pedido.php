@@ -13,8 +13,8 @@ class Produto_pedido extends Model
 	];
 
 	protected $fillable = [
-		'produto_id_produto',
-		'pedido_id_pedido',
+		'id_produto',
+		'id_pedido',
 		'quantidade'
 	];
 }

@@ -17,8 +17,8 @@ class ProdutoImagem extends Migration
 			$table->increments('id_imagem');
 			$table->string('nome');
 			$table->string('alt')->nullable();
-			$table->integer('imagem_id_produto')->unsigned();
-			$table->foreign('imagem_id_produto')->references('id_produto')->on('produto');
+			$table->unsignedInteger('id_produto');
+			$table->foreign('id_produto')->references('id_produto')->on('produto');
 			$table->timestamps();
 		});
 	}

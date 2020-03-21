@@ -19,13 +19,13 @@ class Produto extends Migration
 			$table->string('nome');
 			$table->string('autor');
 			$table->string('sinopse')->nullable();
-			$table->integer('produto_id_categoria')->unsigned();
-			$table->foreign('produto_id_categoria')->references('id_categoria')->on('produto_categoria');
 			$table->string('numero_paginas')->nullable();
 			$table->string('ano_publicacao')->nullable();
 			$table->string('edicao')->nullable();
 			$table->string('editora');
 			$table->string('preco');
+			$table->unsignedInteger('id_categoria');
+			$table->foreign('id_categoria')->references('id_categoria')->on('produto_categoria');
 			$table->timestamps();
 		});
 	}

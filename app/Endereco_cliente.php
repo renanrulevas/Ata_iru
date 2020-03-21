@@ -13,7 +13,7 @@ class Endereco_cliente extends Model
 	];
 
 	protected $fillable = [
-		'endereco_id_endereco',
-		'endereco_id_cliente'
+		'id_endereco',
+		'id_cliente'
 	];
 }

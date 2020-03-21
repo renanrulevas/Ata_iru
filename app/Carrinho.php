@@ -13,7 +13,7 @@ class Carrinho extends Model
 	];
 
 	protected $fillable = [
-		'carrinho_id_cliente',
-		'carrinho_id_pedido'
+		'id_cliente',
+		'id_pedido'
 	];
 }
