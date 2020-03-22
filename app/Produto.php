@@ -24,4 +24,9 @@ class Produto extends Model
 		'editora',
 		'preco'
 	];
+
+	public function carrinho()
+	{
+		return $this->belongsToMany('App\Carrinho')->using('App\Carrinho_produto');
+	}
 }

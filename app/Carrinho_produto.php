@@ -16,4 +16,14 @@ class Carrinho_produto extends Model
 		'id_cliente',
 		'id_produto'
 	];
+
+	public function produto()
+	{
+		return $this->hasMany('App\Produto');
+	}
+
+	public function carrinho()
+	{
+		return $this->belongsTo('App\Carrinho');
+	}
 }

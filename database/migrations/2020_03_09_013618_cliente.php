@@ -20,6 +20,8 @@ class Cliente extends Migration
 			$table->string('email');
 			$table->integer('telefone')->nullable();
 			$table->string('senha');
+			$table->unsignedInteger('id_endereco');
+			$table->foreign('id_endereco')->references('id_endereco')->on('endereco');
 			$table->timestamps();
 		});
 	}

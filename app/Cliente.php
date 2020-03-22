@@ -17,6 +17,12 @@ class Cliente extends Model
 		'cpf',
 		'email',
 		'telefone',
-		'senha'
+		'senha',
+		'id_endereco'
 	];
+
+	public function endereco()
+	{
+		return $this->hasMany('App\Endereco');
+	}
 }
