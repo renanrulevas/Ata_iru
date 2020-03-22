@@ -15,4 +15,9 @@ class Produto_categoria extends Model
 	protected $fillable = [
 		'nome_categoria'
 	];
+
+	public function produto()
+	{
+		return $this->hasMany('App\Produto');
+	}
 }

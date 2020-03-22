@@ -15,7 +15,7 @@ class Produto_imagem extends Model
 	protected $fillable = [
 		'nome',
 		'alt',
-		'imagem_id_produto'
+		'id_produto'
 
 	];
 }

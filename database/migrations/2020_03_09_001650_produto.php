@@ -18,7 +18,7 @@ class Produto extends Migration
 			$table->string('isbn')->unique();
 			$table->string('nome');
 			$table->string('autor');
-			$table->string('sinopse')->nullable();
+			$table->longText('sinopse')->nullable();
 			$table->string('numero_paginas')->nullable();
 			$table->string('ano_publicacao')->nullable();
 			$table->string('edicao')->nullable();
