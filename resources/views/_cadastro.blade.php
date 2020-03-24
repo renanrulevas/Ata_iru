@@ -18,7 +18,7 @@
 					<input type="password" name="senha" id="senha"><br>
 					<p> <label>Confirmar Senha:</label> </p>
 					<input type="password" name="senha2" id="senha2"><br>
-					<p> <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar"> </p>
+					<p> <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar"> </p>
 				</form>
 			</div>
 			<section>
