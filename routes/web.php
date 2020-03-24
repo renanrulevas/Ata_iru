@@ -13,15 +13,17 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
-Route::get('/alterarconta', 'HomeController@alterarConta');
 Route::get('/cadastro', 'HomeController@cadastro');
 Route::get('/carrinho', 'HomeController@carrinho');
-Route::get('/conta', 'HomeController@conta');
+
 Route::get('/contato', 'HomeController@contato');
 Route::get('/faq', 'HomeController@faq');
 Route::get('/login', 'HomeController@login');
 Route::get('/sobre', 'HomeController@sobre');
 
+Route::any('/conta', 'UserController@index')->name('conta.index');
+Route::post('/conta/alterarConta', 'UserController@update')->name('conta.update');
+Route::get('/conta/deletarConta', 'UserController@delete')->name('conta.delete');
 
 Route::get('/produtos', 'ProdutoController@index');
 Route::get('/produto/{id}', 'ProdutoController@show');

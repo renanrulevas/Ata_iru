@@ -4,77 +4,55 @@
 
 <main id="altera-conta-principal" class="justify-content-center">
   <section>
-    <h1>Login e segurança </h1>
+    <h1>Alterar Dados de Login </h1>
     <div id="altera-conta" class="mb-3">
       <div class="container altera-container">
+      @if(session('success'))
+          <div class="alert alert-success">
+              {{session('success')}}
+          </div>
+      @endif
+
+      @if(session('error'))
+          <div class="alert alert-danger">
+              {{session('error')}}
+          </div>
+      @endif
+
+      <form method="POST" action="{{route('conta.update')}}" >
+          {{csrf_field()}}
+          
         <div class="row altera-conta-div-principal">
           <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-            <span class="altera-conta-nome" class="altera-conta-nome">Nome:</span>
-            <p>Fulano de Tal</p>
-          </div>
-          <div class="col-8 col-sm-6 col-lg-6 text-right altera-conta-div-auxiliar">
-            <button class="btn btn-secondary altera-conta-botao">Editar</button>
+            <label class="altera-conta-nome">Nome Completo:</label>
+              <input name="nome" class="altera-conta-nome" class="altera-conta-nome" value="{{ auth()->user()->name}}">        
           </div>
         </div>
       </div>
       <div class="container altera-container">
         <div class="row altera-conta-div-principal">
           <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-            <span class="altera-conta-nome">E-mail:</span>
-            <p>fulano@tal.com</p>
-          </div>
-          <div class="col-8 col-sm-6 col-lg-6 text-right altera-conta-div-auxiliar">
-            <button class="btn btn-secondary altera-conta-botao">Editar</button>
-          </div>
+          <label class="altera-conta-nome">E-mail:</label>
+              <input name="email" class="altera-conta-nome" class="altera-conta-nome" value="{{ auth()->user()->email}}"> 
         </div>
       </div>
       <div class="container altera-container">
         <div class="row altera-conta-div-principal">
           <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-            <span class="altera-conta-nome">Telefone:</span>
-            <p>(11)99999</p>
-          </div>
-          <div class="col-8 col-sm-6 col-lg-6 text-right altera-conta-div-auxiliar">
-            <button class="btn btn-secondary altera-conta-botao">Editar</button>
-          </div>
-        </div>
-      </div>
-      <div class="container altera-container">
-        <div class="row altera-conta-div-principal">
-          <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-            <span class="altera-conta-nome">CPF:</span>
-            <p>999.999.999-99</p>
-          </div>
-          <div class="col-8 col-sm-6 col-lg-6 text-right altera-conta-div-auxiliar">
-            <button class="btn btn-secondary altera-conta-botao">Editar</button>
-          </div>
-        </div>
-      </div>
-      <div class="container altera-container">
-        <div class="row altera-conta-div-principal">
-          <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-            <span class="altera-conta-nome">Endereço:</span>
-            <p>Rua: Fulano de Tal</p>
-          </div>
-          <div class="col-8 col-sm-6 col-lg-6 text-right altera-conta-div-auxiliar">
-            <button class="btn btn-secondary altera-conta-botao">Editar</button>
-          </div>
-        </div>
-      </div>
-      <div class="container altera-container">
-        <div class="row altera-conta-div-principal">
-          <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-            <span class="altera-conta-nome">Senha:</span>
-            <p>****</p>
-          </div>
-          <div class="col-8 col-sm-6 col-lg-6 text-right altera-conta-div-auxiliar">
-            <button class="btn btn-secondary altera-conta-botao">Editar</button>
-          </div>
+           <label class="altera-conta-nome">Senha:</label>
+              <input name="password" type="password" class="altera-conta-nome" class="altera-conta-nome"> 
         </div>
       </div>
     </div>
-  </section>
-  <button class="btn btn-secondary btn-lg altera-conta-botao">Concluído</button>
+        <button type="submit" class="btn btn-secondary altera-conta-botao">Alterar Cadastro</button>
+
+        <div class="form-group">
+                    <label class="altera-conta-nome">Desejo excluir a conta</label>
+                      <a class="btn btn-link" href="{{ route('conta.delete') }}">
+                          {{ __('Excluir cadastro') }}
+                      </a>
+         </div>
+        </form>
   </section>
 </main>
 
