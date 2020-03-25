@@ -11,6 +11,7 @@ class Produto extends Model
 		'created_at',
 		'updated_at'
 	];
+	protected $primaryKey = 'id_produto';
 
 	protected $fillable = [
 		'isbn',
