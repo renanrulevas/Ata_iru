@@ -36,4 +36,9 @@ class HomeController extends Controller
         return view('carrinho');
     }
 
+    public function cadastro()
+    {
+        return view('cadastro');
+    }
+
 }
