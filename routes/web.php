@@ -41,3 +41,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/admin/produto/', 'ProdutoController@admin');
+Route::get('/admin/produto/create', 'ProdutoController@create');
+Route::post('/admin/produto/insert', 'ProdutoController@insert');

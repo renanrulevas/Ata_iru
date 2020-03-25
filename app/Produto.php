@@ -34,4 +34,9 @@ class Produto extends Model
 	{
 		return $this->hasMany('App\Produto_imagem');
 	}
+
+	public function categoria()
+    {
+        return $this->belongsTo('App\Produto_categoria', 'id_categoria', 'id');
+    }
 }
