@@ -105,9 +105,9 @@
 
 @media (min-width: 1200px) {
   .forma{
-      width: 40vw;
-      height: 65vh;
-      padding: 76px 73px;
+      /* width: 40vw; */
+      /* height: 65vh; */
+      /* padding: 76px 73px; */
       margin: 40px auto;
   }
 
