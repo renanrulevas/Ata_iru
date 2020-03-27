@@ -22,6 +22,7 @@ Route::get('/login', 'HomeController@login');
 Route::get('/sobre', 'HomeController@sobre');
 
 Route::any('/conta', 'UserController@index')->name('conta.index');
+Route::get('/conta/alterarConta', 'UserController@alteraConta')->name('conta.alteraConta');
 Route::post('/conta/alterarConta', 'UserController@update')->name('conta.update');
 Route::get('/conta/deletarConta', 'UserController@delete')->name('conta.delete');
 

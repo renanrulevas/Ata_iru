@@ -8,6 +8,10 @@ use App\User;
 class UserController extends Controller
 {
    public function index(){
+       return view('conta');
+   }
+   
+   public function alteraConta(){
        return view('alterarConta');
    }
 
