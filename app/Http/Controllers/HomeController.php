@@ -13,7 +13,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -30,6 +29,10 @@ class HomeController extends Controller
     {
         return view('contato');
     }
+    public function sobre()
+    {
+        return view('sobre');
+    }
 
     public function carrinho()
     {
@@ -45,10 +48,4 @@ class HomeController extends Controller
     {
         return view('faq');
     }
-
-    public function sobre()
-    {
-        return view('sobre');
-    }
-
 }
