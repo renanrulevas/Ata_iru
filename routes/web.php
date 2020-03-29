@@ -28,6 +28,10 @@ Route::post('/conta/alterarConta', 'UserController@update')->name('conta.update'
 Route::get('/conta/deletarConta', 'UserController@delete')->name('conta.delete');
 Route::any('/auth/register', 'HomeController@index');
 
+//CRUD Clientes
+Route::any('/finalizaCadastro', 'ClienteController@index')->name('cliente.index');
+Route::post('/finalizaCadastro', 'ClienteController@create')->name('cliente.create');
+
 //CRUD Carrinho
 //TODO: Adicionar item ao carrinho na tela do produto($id) (C)
 Route::get('/carrinho/{id_cliente}', 'CarrinhoController@index'); //*READ: Pega todos os produtos do carrinho (R)
