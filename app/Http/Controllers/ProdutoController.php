@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Produto;
 use App\Produto_categoria;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\File;
+
 
 class ProdutoController extends Controller
 {
@@ -52,11 +55,11 @@ class ProdutoController extends Controller
         $arquivo = $request->file('imagem');
         if (!empty($arquivo)) {
             // salvando
-            $nomePasta = 'uploads';
+            $nomePasta = 'livros';
             $arquivo->storePublicly($nomePasta); // nome temporario do arquivo
-            $caminhoAbsoluto = public_path() . "/storage/$nomePasta";
+            $caminhoAbsoluto = public_path() . "/img/$nomePasta";
             $nomeArquivo = $arquivo->getClientOriginalName(); // faz a hash para nome do arquivo
-            $caminhoRelativo = "/storage/$nomePasta/$nomeArquivo";
+            $caminhoRelativo = "/img/$nomePasta/$nomeArquivo";
             // movendo
             $arquivo->move($caminhoAbsoluto, $nomeArquivo);
             $produto->imagem = $caminhoRelativo;
@@ -93,14 +96,14 @@ class ProdutoController extends Controller
         $arquivo = $request->file('imagem');
         if (!empty($arquivo)) {
             // salvando
-            $nomePasta = 'uploads';
+            $nomePasta = 'livros';
             $arquivo->storePublicly($nomePasta); // nome temporario do arquivo
-            $caminhoAbsoluto = public_path() . "/storage/$nomePasta";
+            $caminhoAbsoluto = public_path() . "/img/$nomePasta";
             $nomeArquivo = $arquivo->getClientOriginalName(); // faz a hash para nome do arquivo
-            $caminhoRelativo = "/storage/$nomePasta/$nomeArquivo";
+            $caminhoRelativo = "/img/$nomePasta/$nomeArquivo";
             // movendo
             $arquivo->move($caminhoAbsoluto, $nomeArquivo);
-            $produto->produto_imagem->nome = $caminhoRelativo;
+            $produto->imagem = $caminhoRelativo;
         }
 
         $produto->save();
@@ -118,6 +121,12 @@ class ProdutoController extends Controller
     public function remove($id_produto)
     {
         $produto = Produto::find($id_produto);
+
+        $image_path = $produto->imagem;
+        
+        if(Storage::exists($image_path)) {
+            Storage::delete($image_path);
+        }
 
         $produto->delete();
 
