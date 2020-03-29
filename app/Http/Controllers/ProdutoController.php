@@ -13,12 +13,16 @@ class ProdutoController extends Controller
 {
 	public function index()
 	{
-		return view('produtos');
+		$produtos = Produto::paginate(9);
+        $categorias = Produto_categoria::all();
+        return view('produtos', compact('produtos', 'categorias'));
 	}
 
 	public function show($id_produto)
 	{
-		return view('produto');
+        $produto =  Produto::find($id_produto);
+		$categoria = Produto_categoria::find($id_produto);
+		return view('produto', compact('produto', 'categoria'));
 	}
 
 	public function admin()
@@ -131,6 +135,15 @@ class ProdutoController extends Controller
         $produto->delete();
 
         return redirect('/admin/produto');
+    }
+
+    public function filtroCategoria($id_categoria)
+    {
+        $produtos = Produto::where('id_categoria', '=', $id_categoria)->paginate(3);
+        $categoria = Produto_categoria::find($id_categoria);
+        $nomeCategoria = $categoria->nome_categoria;
+
+        return view('produtos', compact('produtos', 'nomeCategoria'));
     }
 
 }
