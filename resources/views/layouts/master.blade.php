@@ -10,21 +10,21 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Carousel Glide.js -->
-	<link rel="stylesheet" href="../js/slick-master/slick/slick.css">
-	<link rel="stylesheet" href="../js/slick-master/slick//slick-theme.css">
-	<link rel="stylesheet" href="../css/alterarConta.css" type="text/css">
-	<link rel="stylesheet" href="../css/cadastro.css">
-	<link rel="stylesheet" href="../css/carrinho.css" type="text/css">
-	<link rel="stylesheet" href="../css/conta.css" type="text/css">
-	<link rel="stylesheet" href="../css/contato.css" type="text/css">
-	<link rel="stylesheet" href="../css/faq.css" type="text/css">
-	<link rel="stylesheet" href="../css/index.css" type="text/css">
-	<link rel="stylesheet" href="../css/login.css" type="text/css">
-	<link rel="stylesheet" href="../css/produtos.css" type="text/css">
-	<link rel="stylesheet" href="../css/sobre.css" type="text/css">
-	<link rel="stylesheet" href="../css/style.css" type="text/css">
-	<link rel="stylesheet" href="../css/vizprod.css">
-	<link rel="stylesheet" href="../css/email-reset.css" type="text/css" />
+	<link rel="stylesheet" href={{ asset('js/slick-master/slick/slick.css') }}>
+	<link rel="stylesheet" href={{ asset('js/slick-master/slick//slick-theme.css') }}>
+	<link rel="stylesheet" href={{ asset('css/alterarConta.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/cadastro.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/carrinho.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/conta.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/contato.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/faq.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/index.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/login.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/produtos.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/sobre.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/style.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/vizprod.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/email-reset.css') }} type="text/css">
 	<title>Livraria Ataîru | Seu companheiro de viagem</title>
 </head>
 
@@ -33,7 +33,7 @@
 	<header>
 		<div id="menu">
 			<div class="logo">
-				<a href="/"><img src="../img/LivrariaAtairu-logo-Courier_New.png" alt="Logo Livraria Ataîru"></a>
+				<a href="/"><img src={{ asset('img/LivrariaAtairu-logo-Courier_New.png') }} alt="Logo Livraria Ataîru"></a>
 			</div>
 			<div class="busca">
 				<form>
@@ -128,7 +128,7 @@
 		<footer>
 			<div class="seta">
 				<a href="#menu">
-					<img src="../img/seta.png" alt="">
+					<img src={{ asset('img/seta.png') }} alt="">
 				</a>
 			</div>
 			<div class="container-footer">
@@ -148,11 +148,11 @@
 				<div class="pagamento">
 					<h3>Formas de pagamentos</h3>
 					<ul>
-						<li><img src="../img/1.png" alt=""></li>
-						<li><img src="../img/2.png" alt=""></li>
-						<li><img src="../img/3.png" alt=""></li>
-						<li><img src="../img/4.png" alt=""></li>
-						<li><img src="../img/5.png" alt=""></li>
+						<li><img src={{ asset('img/1.png') }} alt=""></li>
+						<li><img src={{ asset('img/2.png') }} alt=""></li>
+						<li><img src={{ asset('img/3.png') }} alt=""></li>
+						<li><img src={{ asset('img/4.png') }} alt=""></li>
+						<li><img src={{ asset('img/5.png') }} alt=""></li>
 					</ul>
 					<div class="social_midia">
 						<h3>Mídias Sociais</h3>
@@ -180,10 +180,10 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- Slick slides -->
-	<script src="../js/slick-master/slick/slick.js"></script>
+	<script src={{ asset('js/slick-master/slick/slick.js') }}></script>
 
 	<!-- Additional js -->
-	<script src="../js/index.js"></script>
+	<script src={{ asset('js/index.js') }}></script>
 </body>
 
 </html>
