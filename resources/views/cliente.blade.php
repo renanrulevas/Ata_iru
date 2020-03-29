@@ -8,30 +8,6 @@
             <div class="container altera-container">
                 <form method="POST" action="{{route('cliente.create')}}" >
                     {{csrf_field()}}
-
-                    <div class="row altera-conta-div-principal">
-                        <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-                            <label class="altera-conta-nome">CPF:</label>
-                            <input name="cpf" class="altera-conta-nome" value="">        
-                        </div>
-                    </div>
-            </div>
-            <div class="container altera-container">
-                <div class="row altera-conta-div-principal">
-                    <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-                        <label class="altera-conta-nome">Telefone:</label>
-                        <input name="telefone" class="altera-conta-nome" value=""> 
-                    </div>
-                </div>
-            </div>
-            <div class="container altera-container">
-                <div class="row altera-conta-div-principal">
-                    <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">
-                        <label class="altera-conta-nome">CEP:</label>
-                        <input id="cep" name="cep" class="altera-conta-nome"  value=""> 
-                    </div>
-                </div>
-            </div>
             <div class="container altera-container">
                 <div class="row altera-conta-div-principal">
                     <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">

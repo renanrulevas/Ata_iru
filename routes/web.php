@@ -29,8 +29,8 @@ Route::get('/conta/deletarConta', 'UserController@delete')->name('conta.delete')
 Route::any('/auth/register', 'HomeController@index');
 
 //CRUD Clientes
-Route::any('/finalizaCadastro', 'ClienteController@index')->name('cliente.index');
-Route::post('/finalizaCadastro', 'ClienteController@create')->name('cliente.create');
+Route::any('/finalizaCadastro', 'EnderecoController@index')->name('cliente.index');
+Route::post('/finalizaCadastro', 'EnderecoController@create')->name('cliente.create');
 
 //CRUD Carrinho
 //TODO: Adicionar item ao carrinho na tela do produto($id) (C)
