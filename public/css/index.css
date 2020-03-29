@@ -2,12 +2,17 @@
 
 #home {
     font-family: "Roboto", sans-serif;
+    background: #dcedc8;
+
 }
 
 #home h2 {
     margin-top: 15vh;
     text-transform: uppercase;
     font-size: 30px;
+    color: #507642;
+    font-family: "Courier";
+    font-weight: bold;
 }
 
 /* Editoras */
@@ -59,17 +64,20 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
+    font-family: "Courier";
 }
 
 .newsletter .input-group {
     width: 50%;
     padding-left: 30px;
+    font-family: "Courier";
 }
 
 .newsletter .form-control {
     margin-bottom: 0;
     width: 70%;
     flex: inherit;
+    
 }
 
 @media (max-width: 768px) {
@@ -81,9 +89,10 @@
     .newsletter button {
         font-size: 14px;
         padding: 5px 10px;
-        margin-left: 5px;
+        margin-left: 5px;        
     }
 }
+
 
 /* CAROUSEL */
 h1 {

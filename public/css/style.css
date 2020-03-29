@@ -5,7 +5,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: #dcedc8;
 }
 
 h1 {
@@ -103,7 +103,9 @@ h1 {
 .navbar-dark .navbar-nav .show > .nav-link {
     background-color: white;
     font-weight: 800;
-    color: black;
+    color: #507642;
+    font-weight: bold;
+    background: #dcedc8;
 }
 
 .navbar ul li {
@@ -115,6 +117,7 @@ h1 {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    background: #dcedc8;
 }
 
 .navbar ul li:hover,
