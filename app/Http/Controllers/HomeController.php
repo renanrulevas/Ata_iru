@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Produto;
+use App\Produto_categoria;
 
 class HomeController extends Controller
 {
@@ -22,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $novidades = Produto::orderBy('created_at', 'desc')->take(7)->get(); //Carousel Novidades
+        return view('home', compact('novidades'));
     }
 
     public function contato()
