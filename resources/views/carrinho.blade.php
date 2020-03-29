@@ -20,7 +20,7 @@
         @foreach($resultado as $produto)
         <div class="product">
           <div class="product-image">
-            <img src='../{{ $produto->imagem }}'>
+            <img src='{{ $produto->imagem }}'>
           </div>
           <div class="product-details">
             <div class="product-title">{{ $produto->titulo }}</div>

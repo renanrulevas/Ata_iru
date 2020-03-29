@@ -24,7 +24,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2018',
 				'edicao' => '1',
 				'editora' => 'Objetiva',
-				'preco' => '50,32'
+				'preco' => '50,32',
+				'imagem' => '../img/livros/9788547000646.jpg'
 			],
 
 			[
@@ -37,7 +38,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2013',
 				'edicao' => '1',
 				'editora' => 'Companhia Das Letras',
-				'preco' => '44,90'
+				'preco' => '44,90',
+				'imagem' => '../img/livros/9788535923438.jpg'
 			],
 
 			[
@@ -50,7 +52,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2009',
 				'edicao' => '1',
 				'editora' => 'Alta Books',
-				'preco' => '96,90'
+				'preco' => '96,90',
+				'imagem' => '../img/livros/9788576082675.jpg'
 			],
 
 			[
@@ -63,7 +66,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2016',
 				'edicao' => '3',
 				'editora' => 'Alta Books',
-				'preco' => '63,00'
+				'preco' => '63,00',
+				'imagem' => '../img/livros/9788550800653.jpg'
 			],
 
 			[
@@ -76,7 +80,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2019',
 				'edicao' => '1',
 				'editora' => 'Pandorga',
-				'preco' => '59,90'
+				'preco' => '59,90',
+				'imagem' => '../img/livros/9788584424573.jpg'
 			],
 
 			[
@@ -89,7 +94,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2019',
 				'edicao' => '2',
 				'editora' => 'Principis',
-				'preco' => '19,90'
+				'preco' => '19,90',
+				'imagem' => '../img/livros/9788594318237.jpg'
 			],
 
 			[
@@ -102,7 +108,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2014',
 				'edicao' => '1',
 				'editora' => 'Biblioteca Azul',
-				'preco' => '44,90'
+				'preco' => '44,90',
+				'imagem' => '../img/livros/9788525056009.jpg'
 			],
 
 			[
@@ -115,7 +122,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '1998',
 				'edicao' => '1',
 				'editora' => 'Rocco',
-				'preco' => '19,90'
+				'preco' => '19,90',
+				'imagem' => '../img/livros/9788532508126.jpg'
 			],
 
 			[
@@ -128,7 +136,8 @@ class ProdutosTableSeeder extends Seeder
 				'ano_publicacao' => '2016',
 				'edicao' => '1',
 				'editora' => 'Nova Fronteira',
-				'preco' => '19,90'
+				'preco' => '19,90',
+				'imagem' => '../img/livros/9788520927823.jpg'
 			],
 		]);
 
@@ -145,6 +154,7 @@ class ProdutosTableSeeder extends Seeder
 			$novoProduto->edicao = $item['edicao'];
 			$novoProduto->editora = $item['editora'];
 			$novoProduto->preco = $item['preco'];
+			$novoProduto->imagem = $item['imagem'];
 			$novoProduto->save();
 		});
 	}

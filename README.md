@@ -101,4 +101,4 @@ php artisan db:seed
 
 <img src="public/img/documentation/migrations05.png" alt="migrations04" width="70%"/>
 
-* Confira também se os seeds foram incluídos nas tabelas produto, produto_categoria e produto_imagem.  
+* Confira também se os seeds foram incluídos nas tabelas produto e produto_categoria.  

@@ -23,17 +23,13 @@ class Produto extends Model
 		'ano_publicacao',
 		'edicao',
 		'editora',
-		'preco'
+		'preco',
+		'imagem'
 	];
 
 	public function carrinho()
 	{
 		return $this->belongsToMany('App\Carrinho')->using('App\Carrinho_produto');
-	}
-
-	public function produto_imagem()
-	{
-		return $this->hasMany('App\Produto_imagem');
 	}
 
 	public function categoria()
