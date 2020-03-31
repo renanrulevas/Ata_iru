@@ -8,12 +8,17 @@ use App\User;
 
 class EnderecoController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index() {
-        return view('cliente');
+       return view('endereco');
     }
  
     public function create(Request $request) {     
-        $id = auth()->user()->id;
+        $id = auth()->user()->id;;
         $usuario = User::find($id);
         
         $endereco = Endereco::create(
@@ -25,9 +30,11 @@ class EnderecoController extends Controller
                 'cidade' => $request->input('cidade'),
                 'numero' => $request->input('numero'),
                 'complemento' => $request->input('complemento'),
+                'id_usuario' => $id
             ]); 
-        
         $endereco->save();
+        
+     return redirect('/conta')->with('mensagem', 'Produto criado com sucesso');
     }
-    
+   
 }

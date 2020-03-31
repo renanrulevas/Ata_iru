@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','cpf','telefone','id_endereco'		
+        'name', 'email', 'password','cpf','telefone','id_usuario'		
     ];
 
     /**
@@ -39,6 +39,6 @@ class User extends Authenticatable
     
     public function endereco()
 	{
-		return $this->hasMany('App\Endereco');
+		return $this->hasMany('App\Endereco', 'foreign_key', 'id_usuario');
 	}
 }
