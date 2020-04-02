@@ -24,7 +24,7 @@ class Endereco extends Migration
 			$table->integer('cep');
 			$table->timestamps();
                         $table->unsignedInteger('id_usuario');
-                        $table->foreign('id_usuario')->references('id')->on('users');
+                        $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
 		});
 	}
 
@@ -36,6 +36,5 @@ class Endereco extends Migration
 	public function down()
 	{
 		Schema::dropIfExists('endereco');
-                $table->dropForeign(['id_usuario']);
 	}
 }

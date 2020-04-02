@@ -23,8 +23,7 @@
                     @forelse($enderecos as $endereco)
 
                     @empty 
-                    <p>Endereço não cadastrado</p>
-                    $endereco = null;
+                 
                     @endforelse
                     <div class="row altera-conta-div-principal">
                         <div class="col-8 col-sm-6 col-lg-6 text-left altera-conta-div-auxiliar">

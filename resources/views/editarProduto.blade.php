@@ -58,7 +58,7 @@
         </select>
     </div>
     <div class="form-group col-md-4">
-      <img src="{{ $produto->imagem }}" class="img-thumbnail" alt="capa de {{ $produto->nome }}">
+      <img src="{{ asset($produto->imagem) }}" class="img-thumbnail" alt="capa de {{ $produto->nome }}">
     </div>
     <div class="form-group">
       <label for="imagem">Imagem</label> <br>

@@ -11,7 +11,12 @@
 }
 
 .forma {
+<<<<<<< HEAD
     width: 35vw;
+=======
+    width: 40vw;
+    height: fit-content;
+>>>>>>> f26a057418a0b7136c1a79fbca7fb3999ea0c08d
     padding: 70px 9px;
     margin:  auto;
     box-sizing: border-box;
@@ -51,7 +56,10 @@
     }
 
     .forma {
+<<<<<<< HEAD
         width: 35vw;
+=======
+>>>>>>> f26a057418a0b7136c1a79fbca7fb3999ea0c08d
         padding: 70px 9px;
         margin: auto;
         box-sizing: border-box;
@@ -61,12 +69,14 @@
 }
 
 @media (min-width: 576px) {
-    .container-cadastro {
-        /* padding: .0rem;
-      margin: .0rem; */
-    }
     .forma {
         width: 88vw;
+<<<<<<< HEAD
+=======
+        height: fit-content;
+        padding: 36px 80px;
+        margin: 40px auto;
+>>>>>>> f26a057418a0b7136c1a79fbca7fb3999ea0c08d
     }
 
     .forma .cadastro-input,
@@ -83,12 +93,24 @@
 
     .forma {
         width: 60vw;
+<<<<<<< HEAD
+=======
+        height: fit-content;
+        padding: 76px 35px;
+        margin: 40px auto;
+>>>>>>> f26a057418a0b7136c1a79fbca7fb3999ea0c08d
     }
 }
 
 @media (min-width: 992px) {
     .forma {
         width: 40vw;
+<<<<<<< HEAD
+=======
+        height: fit-content;
+        padding: 76px 35px;
+        margin: 40px auto;
+>>>>>>> f26a057418a0b7136c1a79fbca7fb3999ea0c08d
     }
 
     .forma .cadastro-input,
@@ -98,7 +120,13 @@
 }
 
 @media (min-width: 1200px) {
+<<<<<<< HEAD
  
+=======
+    .forma {
+        margin: 40px auto;
+    }
+>>>>>>> f26a057418a0b7136c1a79fbca7fb3999ea0c08d
 
     .forma .cadastro-input,
     .forma #main-cadastro .cadastro-senha {

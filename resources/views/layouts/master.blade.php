@@ -10,21 +10,21 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Carousel Glide.js -->
-	<link rel="stylesheet" href="../js/slick-master/slick/slick.css">
-	<link rel="stylesheet" href="../js/slick-master/slick//slick-theme.css">
-	<link rel="stylesheet" href="../css/alterarConta.css" type="text/css">
-	<link rel="stylesheet" href="../css/cadastro.css">
-	<link rel="stylesheet" href="../css/carrinho.css" type="text/css">
-	<link rel="stylesheet" href="../css/conta.css" type="text/css">
-	<link rel="stylesheet" href="../css/contato.css" type="text/css">
-	<link rel="stylesheet" href="../css/faq.css" type="text/css">
-	<link rel="stylesheet" href="../css/index.css" type="text/css">
-	<link rel="stylesheet" href="../css/login.css" type="text/css">
-	<link rel="stylesheet" href="../css/produtos.css" type="text/css">
-	<link rel="stylesheet" href="../css/sobre.css" type="text/css">
-	<link rel="stylesheet" href="../css/style.css" type="text/css">
-	<link rel="stylesheet" href="../css/vizprod.css">
-	<link rel="stylesheet" href="../css/email-reset.css" type="text/css" />
+	<link rel="stylesheet" href={{ asset('js/slick-master/slick/slick.css') }}>
+	<link rel="stylesheet" href={{ asset('js/slick-master/slick//slick-theme.css') }}>
+	<link rel="stylesheet" href={{ asset('css/alterarConta.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/cadastro.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/carrinho.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/conta.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/contato.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/faq.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/index.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/login.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/produtos.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/sobre.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/style.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/vizprod.css') }} type="text/css">
+	<link rel="stylesheet" href={{ asset('css/email-reset.css') }} type="text/css">
 	<title>Livraria Ataîru | Seu companheiro de viagem</title>
 </head>
 
@@ -33,7 +33,7 @@
 	<header>
 		<div id="menu">
 			<div class="logo">
-				<a href="/"><img src="../img/LivrariaAtairu-logo-Courier_New.png" alt="Logo Livraria Ataîru"></a>
+				<a href="/"><img src={{ asset('img/LivrariaAtairu-logo-Courier_New.png') }} alt="Logo Livraria Ataîru"></a>
 			</div>
 			<div class="busca">
 				<form>
@@ -42,48 +42,40 @@
 				</form>
 			</div>
 			<div class="login">
-				<div class="container mt-5">
-					<div class="row">
-						<div class="col text-center mt-3">
-							<i class="fas fa-user icon"></i>
-						</div>
-						<div class="col">
-							<!-- Authentication Links -->
-							@guest
-							<div id="texto_cadastro">
-								<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-								@if (Route::has('register'))
-								<a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a>
-							</div>
-							@endif
-							@else
-							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-								{{ Auth::user()->name }} <span class="caret"></span>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="{{ route('conta.index') }}">
-									{{ __('Minha conta') }}
-								</a>
-								<a class="dropdown-item" href="#">
-									{{ __('Meus pedidos') }}
-								</a>
-
-								<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                               document.getElementById('logout-form').submit();">
-									{{ __('Sair') }}
-								</a>
-
-								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-									@csrf
-								</form>
-							</div>
-							@endguest
-						</div>
-					</div>
+				<div class="login-icon">
+					<i class="fas fa-user icon"></i>
 				</div>
+				<!-- Authentication Links -->
+				@guest
+				<div id="texto_cadastro">
+					<a class="nav-link" href="{{ route('login') }}">{{ __('Login / Cadastre-se') }}</a>
+				</div>
+				@endguest
+				@auth
+				<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+					{{ Auth::user()->name }} <span class="caret"></span>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="{{ route('conta.index') }}">
+						{{ __('Minha conta') }}
+					</a>
+					<a class="dropdown-item" href="#">
+						{{ __('Meus pedidos') }}
+					</a>
+
+					<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();">
+						{{ __('Sair') }}
+					</a>
+
+					<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+						@csrf
+					</form>
+				</div>
+				@endauth
 			</div>
 			<div class="carrinho">
-				<a href="/carrinho">
+				<a href="{{ route('carrinho') }}">
 					<i class="fas fa-shopping-cart icon"></i>
 				</a>
 			</div>
@@ -128,7 +120,7 @@
 		<footer>
 			<div class="seta">
 				<a href="#menu">
-					<img src="../img/seta.png" alt="">
+					<img src={{ asset('img/seta.png') }} alt="">
 				</a>
 			</div>
 			<div class="container-footer">
@@ -148,11 +140,11 @@
 				<div class="pagamento">
 					<h3>Formas de pagamentos</h3>
 					<ul>
-						<li><img src="../img/1.png" alt=""></li>
-						<li><img src="../img/2.png" alt=""></li>
-						<li><img src="../img/3.png" alt=""></li>
-						<li><img src="../img/4.png" alt=""></li>
-						<li><img src="../img/5.png" alt=""></li>
+						<li><img src={{ asset('img/1.png') }} alt=""></li>
+						<li><img src={{ asset('img/2.png') }} alt=""></li>
+						<li><img src={{ asset('img/3.png') }} alt=""></li>
+						<li><img src={{ asset('img/4.png') }} alt=""></li>
+						<li><img src={{ asset('img/5.png') }} alt=""></li>
 					</ul>
 					<div class="social_midia">
 						<h3>Mídias Sociais</h3>
@@ -173,17 +165,17 @@
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="../js/preenche_cep.js" type="text/javascript"></script>
+	<script src="../js/preenche_cep.js" type="text/javascript"></script>
 	<!-- Bootstrap -->
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- Slick slides -->
-	<script src="../js/slick-master/slick/slick.js"></script>
+	<script src={{ asset('js/slick-master/slick/slick.js') }}></script>
 
 	<!-- Additional js -->
-	<script src="../js/index.js"></script>
+	<script src={{ asset('js/index.js') }}></script>
 </body>
 
 </html>
