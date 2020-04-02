@@ -12,9 +12,8 @@
 
 .forma {
     width: 35vw;
-    height: 70vh;
     padding: 70px 9px;
-    margin: 40px auto;
+    margin:  auto;
     box-sizing: border-box;
     border: 2px solid rgba(134, 148, 42, 0.8);
     border-radius: 5px;
@@ -53,9 +52,8 @@
 
     .forma {
         width: 35vw;
-        height: 70vh;
         padding: 70px 9px;
-        margin: 40px auto;
+        margin: auto;
         box-sizing: border-box;
         border: 2px solid red;
         border-radius: 5px;
@@ -69,9 +67,6 @@
     }
     .forma {
         width: 88vw;
-        height: 50vh;
-        padding: 36px 80px;
-        margin: 40px auto;
     }
 
     .forma .cadastro-input,
@@ -88,18 +83,12 @@
 
     .forma {
         width: 60vw;
-        height: 55vh;
-        padding: 76px 35px;
-        margin: 40px auto;
     }
 }
 
 @media (min-width: 992px) {
     .forma {
         width: 40vw;
-        height: 65vh;
-        padding: 76px 35px;
-        margin: 40px auto;
     }
 
     .forma .cadastro-input,
@@ -109,12 +98,7 @@
 }
 
 @media (min-width: 1200px) {
-    .forma {
-        /* width: 40vw; */
-        /* height: 65vh; */
-        /* padding: 76px 73px; */
-        margin: 40px auto;
-    }
+ 
 
     .forma .cadastro-input,
     .forma #main-cadastro .cadastro-senha {

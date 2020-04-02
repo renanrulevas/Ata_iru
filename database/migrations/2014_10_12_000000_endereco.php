@@ -19,6 +19,7 @@ class Endereco extends Migration
 			$table->string('numero');
 			$table->string('complemento')->nullable();
 			$table->string('cidade');
+                        $table->string('bairro');
 			$table->string('uf',100);
 			$table->integer('cep');
 			$table->timestamps();
@@ -35,5 +36,6 @@ class Endereco extends Migration
 	public function down()
 	{
 		Schema::dropIfExists('endereco');
+                $table->dropForeign(['id_usuario']);
 	}
 }
