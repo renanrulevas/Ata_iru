@@ -42,48 +42,40 @@
 				</form>
 			</div>
 			<div class="login">
-				<div class="container mt-5">
-					<div class="row">
-						<div class="col text-center mt-3">
-							<i class="fas fa-user icon"></i>
-						</div>
-						<div class="col">
-							<!-- Authentication Links -->
-							@guest
-							<div id="texto_cadastro">
-								<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-								@if (Route::has('register'))
-								<a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a>
-							</div>
-							@endif
-							@else
-							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-								{{ Auth::user()->name }} <span class="caret"></span>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="{{ route('conta.index') }}">
-									{{ __('Minha conta') }}
-								</a>
-								<a class="dropdown-item" href="#">
-									{{ __('Meus pedidos') }}
-								</a>
-
-								<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                               document.getElementById('logout-form').submit();">
-									{{ __('Sair') }}
-								</a>
-
-								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-									@csrf
-								</form>
-							</div>
-							@endguest
-						</div>
-					</div>
+				<div class="login-icon">
+					<i class="fas fa-user icon"></i>
 				</div>
+				<!-- Authentication Links -->
+				@guest
+				<div id="texto_cadastro">
+					<a class="nav-link" href="{{ route('login') }}">{{ __('Login / Cadastre-se') }}</a>
+				</div>
+				@endguest
+				@auth
+				<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+					{{ Auth::user()->name }} <span class="caret"></span>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="{{ route('conta.index') }}">
+						{{ __('Minha conta') }}
+					</a>
+					<a class="dropdown-item" href="#">
+						{{ __('Meus pedidos') }}
+					</a>
+
+					<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();">
+						{{ __('Sair') }}
+					</a>
+
+					<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+						@csrf
+					</form>
+				</div>
+				@endauth
 			</div>
 			<div class="carrinho">
-				<a href="/carrinho">
+				<a href="{{ route('carrinho') }}">
 					<i class="fas fa-shopping-cart icon"></i>
 				</a>
 			</div>
@@ -173,7 +165,7 @@
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="../js/preenche_cep.js" type="text/javascript"></script>
+	<script src="../js/preenche_cep.js" type="text/javascript"></script>
 	<!-- Bootstrap -->
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
