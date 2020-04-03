@@ -21,11 +21,11 @@ class Endereco extends Model
                 'bairro',
 		'uf',
 		'cep',
-                'id_usuario'
+		'id_usuario'
 	];
-        
-            public function user()
+
+	public function user()
 	{
-		 return $this->belongsTo('App\User');
+		return $this->belongsTo('App\User');
 	}
 }
