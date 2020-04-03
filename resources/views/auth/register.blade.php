@@ -4,7 +4,7 @@
 <main>
     <section> 
         <div class="forma">
-             <h1 id="main-cadastro">{{ __('Cadastro de Cliente') }}</h1>
+             <!-- <h1 id="main-cadastro">{{ __('Cadastro de Cliente') }}</h1> -->
             <div class="container-cadastro p-1 m-5">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
@@ -89,6 +89,7 @@
                         </div>
                  </div>
         </div>  
+
     </section>
 </main>
 
