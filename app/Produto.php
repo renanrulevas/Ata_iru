@@ -11,6 +11,7 @@ class Produto extends Model
 		'created_at',
 		'updated_at'
 	];
+
 	protected $primaryKey = 'id_produto';
 
 	protected $fillable = [
@@ -27,13 +28,13 @@ class Produto extends Model
 		'imagem'
 	];
 
-	public function carrinho()
+	public function categoria()
 	{
-		return $this->belongsToMany('App\Carrinho')->using('App\Carrinho_produto');
+		return $this->belongsTo('App\Produto_categoria', 'id_categoria', 'id_categoria');
 	}
 
-	public function categoria()
-    {
-        return $this->belongsTo('App\Produto_categoria', 'id_categoria', 'id_categoria');
-    }
+	public function pedido()
+	{
+		return $this->belongsToMany('App\Pedido' . 'produto_pedido', 'id_pedido', 'id_pedido');
+	}
 }

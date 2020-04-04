@@ -23,37 +23,49 @@ Route::get('/sobre', 'HomeController@sobre');
 
 //CRUD Usuários
 Route::any('/conta', 'UserController@index')->name('conta.index');
-Route::get('/conta/alterarConta', 'UserController@alteraConta')->name('conta.alteraConta');
+Route::get('/conta/alterarConta', 'UserController@alterarConta')->name('conta.alteraConta');
 Route::post('/conta/alterarConta', 'UserController@update')->name('conta.update');
 Route::get('/conta/deletarConta', 'UserController@delete')->name('conta.delete');
 Route::any('/auth/register', 'HomeController@index');
 
-//CRUD Clientes
+//CRUD Endereço
 Route::any('/finalizaCadastro', 'EnderecoController@index')->name('cliente.index');
 Route::post('/finalizaCadastro', 'EnderecoController@create')->name('cliente.create');
 
 //CRUD Carrinho
-//TODO: Adicionar item ao carrinho na tela do produto($id) (C)
-Route::get('/carrinho/{id_cliente}', 'CarrinhoController@index'); //*READ: Pega todos os produtos do carrinho (R)
-Route::patch('/carrinho/update/{id_carrinho}/{id_produto}', 'CarrinhoController@update'); //* UPDATE: Quantidade do produto (U)
-Route::delete('/carrinho/delete/{id_carrinho}/{id_produto}', 'CarrinhoController@remove')->name('carrinho_delete'); //* DELETE: Produto no carrinho (D)
+Route::post('/carrinho/add/{id_produto}', 'CarrinhoController@insert'); //*CREATE: Adicionar item ao carrinho na tela do produto($id) (C)
+Route::get('/carrinho', 'CarrinhoController@index')->name('carrinho'); //*READ: Pega todos os produtos do carrinho (R)
+Route::patch('/carrinho/update/{id_cliente}/{id_produto}', 'CarrinhoController@update'); //* UPDATE: Quantidade do produto (U)
+Route::delete('/carrinho/delete/{id_cliente}/{id_produto}', 'CarrinhoController@remove')->name('carrinho_delete'); //* DELETE: Produto no carrinho (D)
 
+
+//CRUD Pedidos
+Route::get('/pedidos/new', 'PedidoController@insert'); //TODO: CREATE - Criar novo pedido
+Route::get('/pedidos', 'PedidoController@index')->name('pedidos'); //*READ: Ver lista de pedidos do user
+Route::get('/pedido/{id_pedido}', 'PedidoController@show'); //*READ: Ver pedido específico do user
+Route::get('/pedido/update/{id_pedido}', 'PedidoController@update'); //TODO: Página de atualização do pedido do user
+Route::patch('/pedido/update/{id_pedido}/{id_produto}', 'PedidoController@put'); //TODO: Atualizar pedido do user
+Route::delete('/pedido/delete/{id_pedido}', 'PedidoController@delete'); //TODO: Deletar pedido do user
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//Views do produto
 Route::get('/produtos', 'ProdutoController@index');
 Route::get('/produto/{id}', 'ProdutoController@show');
-Route::any('/auth/register','HomeController@index');
+Route::any('/auth/register', 'HomeController@index');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+//CRUD Produtos
 Route::get('/admin/produto/', 'ProdutoController@admin');
 Route::get('/admin/produto/create', 'ProdutoController@create');
 Route::post('/admin/produto/insert', 'ProdutoController@insert');

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Endereco extends Model
 {
+        protected $primaryKey = 'id_endereco';
 	protected $table = "endereco";
 	protected $dates = [
 		'created_at',
@@ -17,13 +18,14 @@ class Endereco extends Model
 		'numero',
 		'complemento',
 		'cidade',
+                'bairro',
 		'uf',
 		'cep',
-                'id_usuario'
+		'id_usuario'
 	];
-        
-            public function user()
+
+	public function user()
 	{
-		 return $this->belongsTo('App\User');
+		return $this->belongsTo('App\User');
 	}
 }

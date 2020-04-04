@@ -27,16 +27,17 @@
           </div>
           <div class="product-price" style="color:#507642">{{ $produto->preco }}</div>
           <div class="product-quantity">
-            <form action="/carrinho/update/{{ $produto->id_carrinho }}/{{ $produto->id_produto }}" enctype="multipart/form-data" method="POST">
+            <form action="/carrinho/update/{{ $produto->id_cliente }}/{{ $produto->id_produto }}" enctype="multipart/form-data" method="POST">
               @csrf
               @method('PATCH')
               <input type="number" id='quantidade' name="quantidade" value={{ $produto->quantidade }} min="1">
-              <button class="remove-product">
+              <a href=''></a>
+              <button class="update-product">
                 <i class="fas fa-sync"></i>
               </button>
             </form>
 
-            <form action="/carrinho/delete/{{ $produto->id_carrinho }}/{{ $produto->id_produto }}" enctype="multipart/form-data" method="POST">
+            <form action="/carrinho/delete/{{ $produto->id_cliente }}/{{ $produto->id_produto }}" enctype="multipart/form-data" method="POST">
               @csrf
               @method('DELETE')
               <button type="submit" class="btn btn-link">Remover</button>
@@ -45,6 +46,8 @@
           <div class="product-line-price" style="color:#507642;">{{ number_format((((float)str_replace( ['.',','], ['','.'], $produto->preco )*1.0) * $produto->quantidade), 2, '.', '') }}</div>
         </div>
         @endforeach
+        @else
+        <h1>Não há itens no seu carrinho =/</h1>
         @endif
 
         <div class="totals">

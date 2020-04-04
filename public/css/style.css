@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,7 +7,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: #dcedc8;
+    background-color: #f2f2f2;
 }
 
 h1 {
@@ -17,6 +19,9 @@ h1 {
     margin: auto;
 }
 
+section {
+    font-family: "Roboto", sans-serif;
+}
 /* INÍCIO DO MENU + FOOTER */
 
 #menu {
@@ -68,6 +73,14 @@ h1 {
 
 #menu .login {
     width: 15%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#menu .login-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu a {
@@ -100,12 +113,26 @@ h1 {
 .navbar .dropdown-menu,
 .navbar .dropdown-item,
 .navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-nav .show > .nav-link {
-    background-color: white;
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link:active,
+.navbar-dark .navbar-nav .nav-link:visited {
     font-weight: 800;
-    color: #507642;
-    font-weight: bold;
-    background: #dcedc8;
+    color: black;
+    background-color: white;
+}
+
+.dropdown-menu .dropdown-item:visited,
+.dropdown-menu .dropdown-item:active {
+    font-weight: 800;
+    color: black;
+    background-color: white;
+}
+
+.navbar-dark .navbar-nav .show > .dropdown-item:hover,
+.dropdown-menu .dropdown-item:hover {
+    font-weight: 800;
+    color: black;
+    background-color: #f2f2f2;
 }
 
 .navbar ul li {
@@ -117,7 +144,7 @@ h1 {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    background: #dcedc8;
+    background-color: white;
 }
 
 .navbar ul li:hover,
@@ -163,10 +190,12 @@ footer {
     color: #fff;
 }
 
+footer .seta {
+    text-align: center;
+    margin-top: -1rem;
+}
+
 footer .seta a {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     transition: 1s;
 }
 
@@ -206,9 +235,11 @@ footer .container-footer .pagamento ul {
 }
 
 footer .container-footer .pagamento img {
-    max-width: 50px;
+    width: 55px;
     border-radius: 6px;
-    padding: 0 5px;
+    padding: 0 10px;
+    margin: 5px;
+    background-color: #fff;
 }
 
 footer .container-footer .social-media {
