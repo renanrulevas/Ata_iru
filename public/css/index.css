@@ -1,7 +1,6 @@
 #home {
     font-family: "Roboto", sans-serif;
     background: #dcedc8;
-
 }
 
 #home h2 {
@@ -76,6 +75,7 @@
     margin-top: 20px
 }
 
+<<<<<<< HEAD
 .home-newsletter .single .form-control {
     font-family: "Courier";    
     height: 50px;
@@ -97,8 +97,31 @@
     font-family: "Courier";
     font-weight: bold;
     margin-bottom: 50px
+=======
+.newsletter .input-group {
+    width: 30%;
+    font-family: "Courier";
+    min-width: max-content;
 }
 
+.newsletter .form-control {
+    margin-bottom: 0;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        font-size: 20px;
+        justify-content: space-around;
+    }
+
+    .newsletter button {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+>>>>>>> a7d31c77ca75ddd3c7911fbf1bc4f989d1d69ef7
+}
 
 /* CAROUSEL */
 h1 {
@@ -210,6 +233,7 @@ h1 div:first-child {
 }
 .our-team .team-content {
     margin-bottom: 20px;
+    padding: 10px;
 }
 .our-team .title {
     font-size: 18px;

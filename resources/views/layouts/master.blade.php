@@ -12,7 +12,7 @@
 
 	<!-- Carousel Glide.js -->
 	<link rel="stylesheet" href={{ asset('js/slick-master/slick/slick.css') }}>
-	<link rel="stylesheet" href={{ asset('js/slick-master/slick//slick-theme.css') }}>
+	<link rel="stylesheet" href={{ asset('js/slick-master/slick/slick-theme.css') }}>
 	<link rel="stylesheet" href={{ asset('css/alterarConta.css') }} type="text/css">
 	<link rel="stylesheet" href={{ asset('css/cadastro.css') }} type="text/css">
 	<link rel="stylesheet" href={{ asset('css/carrinho.css') }} type="text/css">
@@ -44,19 +44,23 @@
 				</form>
 			</div>
 			<div class="login">
-				<div class="login-icon">
+				<div>
 					<i class="fas fa-user icon"></i>
 				</div>
 				<!-- Authentication Links -->
 				@guest
 				<div id="texto_cadastro">
-					<a class="nav-link" href="{{ route('login') }}">{{ __('Login / Cadastre-se') }}</a>
+					<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
 				</div>
 				@endguest
 				@auth
 				<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
 					aria-haspopup="true" aria-expanded="false" v-pre>
-					{{ Auth::user()->name }} <span class="caret"></span>
+					<?php 
+					$nomeCompleto = Auth::user()->name;
+					$primeiroNome = explode(' ', $nomeCompleto);
+					?>
+					{{ $primeiroNome[0] }} <span class="caret"></span>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="{{ route('conta.index') }}">
@@ -83,33 +87,24 @@
 				</a>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark p-0">
+		<nav class="navbar navbar-expand-lg navbar-light p-0">
 			<button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 				aria-controls="navbarDropdownMenuLink" aria-expanded="false" aria-label="Alterna navegação">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-bars"></i> Categorias
-						</a>
-						<div class="dropdown-menu m-0" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="/produtos/categoria/1">Biografia</a>
-							<a class="dropdown-item" href="/produtos/categoria/2">Informática</a>
-							<a class="dropdown-item" href="/produtos/categoria/3">Literatura Estrangeira</a>
-							<a class="dropdown-item" href="/produtos/categoria/4">Literatura Nacional</a>
-						</div>
+					<li class="nav-item">
+						<a class="dropdown-item" href="/produtos/categoria/1">Biografia</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/produtos">Mais Vendidos</a>
+						<a class="dropdown-item" href="/produtos/categoria/2">Informática</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/produtos">Lançamentos</a>
+						<a class="dropdown-item" href="/produtos/categoria/3">Literatura Estrangeira</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/produtos">Ofertas do Dia</a>
+						<a class="dropdown-item" href="/produtos/categoria/4">Literatura Nacional</a>
 					</li>
 				</ul>
 			</div>
@@ -117,6 +112,7 @@
 
 	</header>
 	<div class="page-container">
+
 
 
 		@yield('content')
@@ -165,7 +161,10 @@
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
+	<script src="js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
 	<script src="../js/preenche_cep.js" type="text/javascript"></script>
+	<script src="../js/validacoes_cliente.js" type="text/javascript"></script>
 	<!-- Bootstrap -->
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
