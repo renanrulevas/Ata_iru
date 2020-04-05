@@ -44,12 +44,20 @@
 	</section>
 
 	<!-- Formulário de newsletter -->
-	<section class="newsletter">
-		<p class="m-0 text-right">Cadastre seu e-mail e ganhe um cupom para sua primeira compra: </p>
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="email@email.com.br" aria-label="Digite seu email" aria-describedby="button-addon2">
-			<div class="input-group-append">
-				<button class="btn btn-light" type="button" id="button-addon2"><i class="fas fa-chevron-right"></i></button>
+	<section class="home-newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="single">
+						<p>Cadastre seu e-mail e ganhe um cupom para sua primeira compra:</p>
+						<div class="input-group">
+						<input type="email" class="form-control" placeholder="Digite seu e-mail">
+						<span class="input-group-btn">
+							<button class="btn btn-theme" type="submit">Enviar</button>
+						</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

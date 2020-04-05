@@ -162,12 +162,9 @@
 						</ul>
 					</div>
 				</div>
-
 			</div>
 			<div class="msg">2019 | Livraria Ataîru | Projeto Integrador - Grupo 4 | Digital House </div>
 		</footer>
-
-
 	</div>
 
 	<!-- jQuery -->
