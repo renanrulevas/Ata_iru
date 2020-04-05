@@ -63,13 +63,18 @@
 					{{ $primeiroNome[0] }} <span class="caret"></span>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+					@if(Auth::user()->auth === 1)
+					<a class="dropdown-item" href="{{ route('admin') }}">
+						{{ __('Painel Admin') }}
+					</a>
+					@endif
 					<a class="dropdown-item" href="{{ route('conta.index') }}">
 						{{ __('Minha conta') }}
 					</a>
 					<a class="dropdown-item" href="{{ route('pedidos') }}">
 						{{ __('Meus pedidos') }}
 					</a>
-
+					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
 									document.getElementById('logout-form').submit();">
 						{{ __('Sair') }}
@@ -94,6 +99,9 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="dropdown-item" href="/produtos">Todos</a>
+					</li>
 					<li class="nav-item">
 						<a class="dropdown-item" href="/produtos/categoria/1">Biografia</a>
 					</li>

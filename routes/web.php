@@ -66,7 +66,7 @@ Route::get('/produto/{id}', 'ProdutoController@show');
 Route::any('/auth/register', 'HomeController@index');
 
 //CRUD Produtos
-Route::get('/admin/produto/', 'ProdutoController@admin');
+Route::get('/admin/produto/', 'ProdutoController@admin')->name('admin');
 Route::get('/admin/produto/create', 'ProdutoController@create');
 Route::post('/admin/produto/insert', 'ProdutoController@insert');
 Route::get('/admin/produto/{id}', 'ProdutoController@update');
