@@ -53,8 +53,7 @@
 
 .home-newsletter {
     background-color: #507642;
-    margin: 20vh 0;
-    /* background: url(img/bg-newsletter.png); */        
+    margin: 20vh 0;       
 }
     
 .home-newsletter .single {
@@ -75,13 +74,13 @@
     margin-top: 20px
 }
 
-<<<<<<< HEAD
+
 .home-newsletter .single .form-control {
     font-family: "Courier";    
     height: 50px;
-    /* background: rgba(255, 255, 255, 0.6); */
     border-color: transparent;
     border-radius: 20px 0 0 20px; 
+    margin-bottom: 50px;
 }
 
 .home-newsletter .single .form-control:focus {
@@ -97,7 +96,7 @@
     font-family: "Courier";
     font-weight: bold;
     margin-bottom: 50px
-=======
+
 .newsletter .input-group {
     width: 30%;
     font-family: "Courier";
@@ -120,7 +119,7 @@
         padding: 5px 10px;
         margin-left: 5px;
     }
->>>>>>> a7d31c77ca75ddd3c7911fbf1bc4f989d1d69ef7
+
 }
 
 /* CAROUSEL */
