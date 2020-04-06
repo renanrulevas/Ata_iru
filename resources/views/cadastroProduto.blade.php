@@ -62,7 +62,7 @@
       <input type="file" name="imagem" id="imagem">
     </div>
     <div class="form-group">
-      <button class="btn btn-primary">Enviar</button>
+      <button class="btn btn-success">Cadastrar</button>
     </div>
   </form>
 </div>

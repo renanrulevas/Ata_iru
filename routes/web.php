@@ -20,6 +20,10 @@ Route::get('/faq', 'HomeController@faq');
 Route::get('/login', 'HomeController@login');
 Route::get('/sobre', 'HomeController@sobre');
 
+//Home: Views Editoras
+Route::get('/alta', 'HomeController@alta');
+Route::get('/rocco', 'HomeController@rocco');
+Route::get('/ciadasletras', 'HomeController@ciadasletras');
 
 //CRUD Usuários
 Route::any('/conta', 'UserController@index')->name('conta.index');
@@ -66,7 +70,7 @@ Route::get('/produto/{id}', 'ProdutoController@show');
 Route::any('/auth/register', 'HomeController@index');
 
 //CRUD Produtos
-Route::get('/admin/produto/', 'ProdutoController@admin');
+Route::get('/admin/produto/', 'ProdutoController@admin')->name('admin');
 Route::get('/admin/produto/create', 'ProdutoController@create');
 Route::post('/admin/produto/insert', 'ProdutoController@insert');
 Route::get('/admin/produto/{id}', 'ProdutoController@update');
