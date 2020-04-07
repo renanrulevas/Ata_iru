@@ -30,6 +30,8 @@
 	color: #F3F4EC;
 	font-family: "Courier";
 	border: 2px solid #507642;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 #altera-conta-principal .altera-conta-botao:hover{
@@ -40,6 +42,7 @@
 #altera-conta-principal .altera-conta-nome{
 	font-size: 14px;
 	font-weight: bold;
+	text-align: center;
 }
 
 #altera-conta-principal .altera-conta-nome p{
