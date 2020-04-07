@@ -48,7 +48,7 @@
                      <div class="form-group row"> 
                         <label class="cadastro-label" for="login-telefone">{{ __('Digite seu  Telefone:') }}</label> 
                         <div class="col-md-10">
-                            <input id="telefone" type="text" class="form-control cadastro-input @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone" max="11">
+                            <input id="telefone" type="text" class="form-control cadastro-input @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone" max="10">
 
                             @error('telefone')
 
